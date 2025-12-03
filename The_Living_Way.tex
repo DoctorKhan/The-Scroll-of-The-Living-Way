@@ -1,0 +1,899 @@
+\documentclass[10pt, openright]{book}
+
+% --- KDP 5x8 PAPERBACK CONFIGURATION ---
+% 5x8 inch trim size.
+% 'inner' margin is larger (0.75in) to account for the spine binding (gutter).
+% 'outer' margin is smaller (0.5in) to maximize reading space.
+\usepackage[paperwidth=5in, paperheight=8in, top=0.75in, bottom=0.75in, outer=0.5in, inner=0.75in]{geometry}
+
+% --- TYPOGRAPHY ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{ebgaramond} % The Classic Serif Font (Time-honored and legible)
+\usepackage{microtype}  % Essential for professional typesetting (smooths edges)
+
+% --- STYLING PACKAGES ---
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{parskip}
+\usepackage{amssymb}
+\usepackage{emptypage} % Prevents page numbers/headers on blank pages
+
+% --- 1. CHAPTER STYLING (The "Books") ---
+\titleformat{\chapter}[display]
+  {\normalfont\centering} % Global style for chapter
+  {\vspace{-1cm}\itshape\large Book \thechapter} % Label "Book I"
+  {10pt} % Space between label and title
+  {\Huge\bfseries} % Title style
+\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+
+% --- 2. SAYING STYLING (The "Statuary" Look) ---
+% We use [display] to stack the number above the title
+\titleformat{\section}[display]
+  {\normalfont\centering} % Center everything
+  {\vspace{1em}\Huge\bfseries\thesection} % THE NUMBER: Huge and Bold
+  {0.3em} % Small gap between number and title
+  {\large\scshape} % THE TITLE: Small Caps, slightly smaller than number
+  
+% Adjust spacing: {left}{top}{bottom}
+\titlespacing*{\section}{0pt}{1.0ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+% --- 3. PAGE BREAK LOGIC ---
+% CRITICAL: This command ensures a saying is never split across pages.
+% If it doesn't fit, it moves to the next page entirely.
+\newcommand{\sectionbreak}{\filbreak}
+
+% --- 4. ORNAMENTS ---
+\newcommand{\ornament}{
+    \vspace{1.5cm}
+    \begin{center}
+        \large $\cdot$ $\odot$ $\cdot$
+    \end{center}
+    \vspace{1.5cm}
+}
+
+% --- 5. HEADER/FOOTER ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[CO]{\scshape\small The Scroll of the Living Way} 
+\fancyhead[CE]{\scshape\small Yeshua the Living One}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+% --- TITLE PAGE ---
+\begin{titlepage}
+    \centering
+    \vspace*{1.5cm}
+    {\Huge \textsc{The Scroll of}\\ \textsc{The Living Way}} \\
+    \vspace{0.5cm}
+    {\large \textit{The 81 Sayings of Yeshua the Living One}} \\
+    \vspace{2cm}
+    \textbf{A Gnostic Tao for the Children of Light}
+    \vfill
+    {\small Compiled \& Prepared for the Seeker of Gnosis}
+    \vspace{1cm}
+\end{titlepage}
+
+\frontmatter
+\tableofcontents
+
+\chapter{Preface of the Scribe}
+\textit{To the one who finds this scroll\dots}
+
+Do not look for the author of these words in history, for the Living One is not of the past, but of the Eternal Now.
+
+These sayings were not written with ink on papyrus, but were heard in the silence of the bridal chamber—that sacred space where the heart and the mind become one.
+
+Enter these pages slowly. Read not with the intellect that divides, but with the spirit that unites.
+
+\vspace{1cm}
+\begin{center}
+    \textit{May the Inner Sun rise in your heart.}
+\end{center}
+\ornament
+
+\mainmatter
+
+% =========================================================
+% BOOK 1
+% =========================================================
+\chapter{The Light Before the World}
+\begin{center}
+    \textit{(Sayings 1--9)} \\
+    \vspace{0.5cm}
+    \small From the Silence, the Word. \\ From the Word, the Light.
+\end{center}
+\vspace{0.5cm}
+
+\section{The Way That Is Not Seen}
+The Word caught in ink is dead; \\
+the Word lived is a devouring fire. \\
+The Kingdom is spread upon the earth, \\
+but people do not see it.
+
+Those who seek with the eyes find shadows. \\
+Those who seek with the heart of stillness \\
+find the Source from which all seeing flows.
+
+\section{The Two Become One}
+The world is born from the cutting in two— \\
+male and female, light and shadow, life and death. \\
+But these divisions are garments only.
+
+Truly I tell you: When you make the two one, \\
+the lion in you becomes a child, \\
+and the child becomes the One who is not born. \\
+Then the bridal chamber opens within you.
+
+\section{The Poverty of the Unknowing}
+People cling to the loud voices of the world. \\
+They trust laws more than their own hearts, \\
+and beliefs more than living knowledge. \\
+They sit in a treasury, yet they starve.
+
+The one who knows the self \\
+need not store teachings in a book. \\
+The being becomes the book.
+
+\section{The Father of Light}
+There is a Light that gives birth to itself. \\
+It is unborn, unbroken, and unbound. \\
+From this Light you came; \\
+to this Light you return when you awaken.
+
+The Father has no wrath. \\
+The Source has no shadow. \\
+Only the garments of the soul cast darkness.
+
+\section{The Powers Question the Soul}
+Desire says, ``You are mine.'' \\
+Ignorance says, ``You do not know yourself.'' \\
+Anger says, ``You must strike and be struck.'' \\
+The body whispers, ``I am all there is.''
+
+But the awakened soul laughs gently: \\
+``You did not see me. \\
+You touched only my clothing.''
+
+\section{The Reed and the Oak}
+The soul is like the reed in the wind. \\
+The false self is like the stiff oak. \\
+When the storm comes, the oak breaks, \\
+but the reed bends and survives.
+
+So it is with the passions: \\
+Do not fight them with hardness. \\
+Let them pass through you like mist through a gate.
+
+\section{The Unforced Kingdom}
+The Kingdom comes by neither effort nor waiting. \\
+When you cease grasping at life, \\
+life reveals itself as eternal. \\
+When you cease seeking the Kingdom, \\
+you discover you have never left it.
+
+What you call ``sin'' is only forgetting. \\
+What you call ``salvation'' is only remembering.
+
+\section{The Servant at the Feast}
+Be like the servant who seeks the lowest place at the feast. \\
+He does not contend, yet the Master calls him to the front. \\
+So too the one who knows the Father \\
+takes the lowest seat and becomes the highest.
+
+Humility is not making the self small. \\
+It is seeing that the self is a shadow.
+
+\section{The Teacher Who Does Not Teach}
+I do not command belief. \\
+I reveal what is hidden \\
+so you may see with your own eyes.
+
+A master gives answers; \\
+but I give you questions, \\
+so that you may become what I am.
+
+\ornament
+
+% =========================================================
+% BOOK 2
+% =========================================================
+\chapter{The Kingdom Within}
+\begin{center}
+    \textit{(Sayings 10--18)} \\
+    \vspace{0.5cm}
+    \small The door is shut, yet the house is vast. \\ The lamp is small, yet it lights the world.
+\end{center}
+\vspace{0.5cm}
+
+\section{The Single Eye}
+If the eye of the body is divided, \\
+it sees confusion. \\
+If the eye of the heart is single, \\
+it fills the whole body with light.
+
+The Nous stands between soul and spirit— \\
+a lamp lit from both sides. \\
+Guard this lamp, \\
+and the night cannot touch you.
+
+\section{The Inner and the Outer}
+The cup is useful for its emptiness. \\
+So too the self is useful \\
+when it becomes empty of self.
+
+Inside and outside are mirrors. \\
+When they reflect one another without distortion, \\
+the All is revealed.
+
+\section{The Lion and the Child}
+The world teaches you to be a lion— \\
+to conquer, claim, and compel. \\
+But I tell you: \\
+unless the lion becomes a child, \\
+you cannot know the Living Source.
+
+The child is empty, open, and whole. \\
+There is no image of self to defend. \\
+This is why the child enters the Kingdom easily.
+
+\section{The Unbinding}
+What binds you is not outside you. \\
+What frees you is not outside you. \\
+The prison and the key \\
+are fashioned from the same ignorance.
+
+Awaken, and you will laugh— \\
+for there are no gates.
+
+\section{The Return to the Unborn}
+Before you were a form, you were the Living Breath. \\
+Before you were breath, you were the Light. \\
+Before you were the Light, \\
+you were with the Source.
+
+To return is not to go backward. \\
+It is to remember the place \\
+that has never moved.
+
+\section{The Silence That Speaks}
+Words are nets thrown into the sea. \\
+They catch small fish, \\
+but the Great Fish swims free.
+
+Seek not many words from me. \\
+Seek the silence in which the Word is born. \\
+There you and I are one life, \\
+one breath, \\
+one unbroken Being.
+
+\section{The Great Stillness}
+Empty yourself of what you think you are. \\
+Let the waters of the heart become clear. \\
+In stillness, the sediment settles by itself, \\
+and the bottom is revealed.
+
+In the same way, \\
+when the soul becomes still, \\
+the Light of the Living Source \\
+shines through without effort.
+
+\section{The Hidden Guide}
+The greatest guide is the one who disappears. \\
+The seeker awakens and says: \\
+``Look—I have found the Way myself.''
+
+Thus I leave no trace, \\
+and yet my footsteps are everywhere.
+
+\section{When the Way Is Forgotten}
+When the Way is forgotten, virtue is invented. \\
+When virtue is lost, rules are created. \\
+When rules fail, people cling to punishment and reward.
+
+The further you descend, \\
+the further you move from Life. \\
+Return to the beginning, \\
+and the rules fall away like old clothing.
+
+\ornament
+
+% =========================================================
+% BOOK 3
+% =========================================================
+\chapter{The Garment of Silence}
+\begin{center}
+    \textit{(Sayings 19--27)} \\
+    \vspace{0.5cm}
+    \small The garment divides; the wearer unites.
+\end{center}
+\vspace{0.5cm}
+
+\section{Beyond the Teachings}
+Abandon holiness; return to wholeness. \\
+Abandon righteousness; return to sight. \\
+Abandon the law; return to the Source.
+
+What you call ``good'' and ``evil'' \\
+are shadows cast by your own dividing mind. \\
+The heart that sees truly needs no commandments.
+
+\section{Not of This World}
+The world shouts; the Way whispers. \\
+The world demands belief; the Way asks you to see. \\
+The world praises power; the Way dissolves it.
+
+Many chase desires. \\
+Few seek liberation. \\
+Yet the Kingdom belongs to those \\
+who loosen their grip on everything.
+
+\section{The Face of the Invisible}
+The Way is a child-like mystery— \\
+seen only by those who forget themselves.
+
+It has no beginning and no end. \\
+It moves without moving. \\
+Its face cannot be drawn, \\
+yet it shines through your own face \\
+when you remember who you are.
+
+\section{The One Who Is Bent}
+If you wish to be whole, let yourself be broken. \\
+If you wish to be full, empty yourself. \\
+If you wish to be reborn, die to your false image.
+
+I do not raise the proud; \\
+I raise only the one \\
+who has laid the self down.
+
+\section{The Wind Speaks Briefly}
+Speak only what is true, and your words will be few. \\
+The wind does not shout; \\
+yet entire forests bow before it.
+
+When you speak from the Living Source, \\
+your words carry no force— \\
+yet they move mountains.
+
+\section{The Tower That Topples}
+One who raises the self has already fallen. \\
+One who displays virtue has already lost it. \\
+One who demands honor has already betrayed the soul.
+
+Stand in your true nature— \\
+and honor flows from you without asking.
+
+\section{The Womb of Silence}
+There is a womb older than creation. \\
+It is the Silence that births the All. \\
+It is formless, unbounded. \\
+It moves through you as breath, \\
+yet it is not the breath.
+
+Those who know Her \\
+do not cling to life nor fear death.
+
+\section{The Heavy Root}
+The root of the tree is unseen, \\
+yet it holds the whole tree upright. \\
+So too the silent depth of your being \\
+supports your every step.
+
+Those who forget their root \\
+are blown about by every wind— \\
+desire, fear, anger, ignorance. \\
+Remember your depth, and nothing can uproot you.
+
+\section{The Footprints of the Master}
+A master walks without leaving marks. \\
+Speaking without wounding. \\
+Guiding without controlling.
+
+To the blind—a lamp; \\
+to the lost—a doorway; \\
+to the weary—rest. \\
+Seeing the divine spark in all beings, \\
+none are beyond help.
+
+\ornament
+
+% =========================================================
+% BOOK 4
+% =========================================================
+\chapter{The Power of the Gentle}
+\begin{center}
+    \textit{(Sayings 28--36)}
+\end{center}
+\vspace{0.5cm}
+
+\section{The Fertile Soil}
+Know the strength of the sower, \\
+yet keep to the softness of the soil— \\
+the fertile field that receives the seed.
+
+Know knowledge, yet return to innocence. \\
+Thus you become the place \\
+where the two become one.
+
+\section{The Futility of Control}
+Those who attempt to control the world fracture it. \\
+The world is not an object to bend— \\
+it is a living mystery to behold.
+
+Force breeds resistance. \\
+Grasping breeds loss. \\
+Only the open hand receives the fullness of life.
+
+\section{The Way of Non-Violence}
+Those who walk in the Way do not harm. \\
+They do not conquer. \\
+They do not take up the sword.
+
+For every blow you strike strikes you in return. \\
+Every wound you inflict \\
+becomes your own garment of suffering.
+
+Power gained through violence rots the soul; \\
+power gained through awakening cannot be taken away.
+
+\section{The Weapon of the Heart}
+Weapons are tools of fear; \\
+the heart of the awakened has no use for them. \\
+Victory through harm is mourning in disguise.
+
+The wise triumph by dissolving conflict, \\
+not by defeating an opponent— \\
+seeing no opponent at all.
+
+\section{The Way, the Truth}
+People ask, ``Show us the path.'' \\
+I tell them: \textbf{I am the Way.} \\
+People ask, ``Show us the doctrine.'' \\
+I tell them: \textbf{I am the Truth.} \\
+People ask, ``Show us immortality.'' \\
+I tell them: \textbf{I am the Living One.}
+
+The Way is not a map; it is the Single One walking. \\
+No one comes to the Father of Light \\
+except by becoming what I am.
+
+\section{Profit and Loss}
+To know others is intelligence. \\
+To know the self is illumination. \\
+To conquer others is strength. \\
+To conquer the self is freedom.
+
+For what profit is there in gaining the ten thousand things \\
+if you lose the One who perceives them?
+
+\section{The Great River}
+The Way flows everywhere, \\
+giving itself to all beings, claiming nothing.
+
+One who walks in this Way acts without self, \\
+gives without calculation, \\
+and rests without pride. \\
+Thus becoming as the Living Source itself.
+
+\section{The Face of Peace}
+Hold fast to the image of the Living One \\
+and all beings come to rest in your presence.
+
+Peace is not the absence of conflict; \\
+it is the recognition that conflict was a dream. \\
+The awakened do not persuade—they radiate.
+
+\section{The Paradox of Power}
+To let something expand, first allow it to contract. \\
+To let something grow strong, first allow it to weaken.
+
+Thus I guide by reversal, \\
+teaching the soul through its own emptiness.
+
+\ornament
+
+% =========================================================
+% BOOK 5
+% =========================================================
+\chapter{The Union of Opposites}
+\begin{center}
+    \textit{(Sayings 37--45)}
+\end{center}
+\vspace{0.5cm}
+
+\section{The Ease of the Way}
+The Way acts without effort. \\
+When the heart aligns with it, desire loosens its grip.
+
+But when desire rises, the soul becomes troubled. \\
+Use the Light to calm the waters, \\
+and they become clear again.
+
+\section{True Virtue}
+High virtue does not display itself; \\
+it acts from the Source effortlessly. \\
+Lesser virtue clings to rules \\
+because it has forgotten its origin.
+
+When the Kingdom is remembered, virtue blossoms naturally. \\
+When it is forgotten, people invent commandments.
+
+\section{The Ones Who Remain Whole}
+Heaven remains Heaven because it does not exalt itself. \\
+The earth remains earth because it does not resist its nature. \\
+And the soul remains whole when it refuses to be divided.
+
+\section{The Return}
+The movement of the Way is return— \\
+not to the past, but to the unborn Light within you. \\
+All things rise from the Source, \\
+and the Source rises from silence.
+
+\section{The Three Seekers}
+The wise hear the teaching and practice it deeply. \\
+The average hear it and practice it partially. \\
+The foolish hear it and laugh aloud.
+
+Yet the Way dances in the laughter as well, \\
+for all beings walk toward awakening, \\
+even when they walk away.
+
+\section{The Birth of the Two}
+The Source gives birth to the Father and the Mother. \\
+The Two give birth to the Many. \\
+The Many return to the One.
+
+He who sees the One in every form and motion \\
+cannot be shaken.
+
+\section{The Gentle Overcomes}
+Truly I say to you: Water, soft and yielding, \\
+cuts through the rock of ages. \\
+What has no substance enters where nothing can enter. \\
+Thus the soul, when subtle, passes through every barrier.
+
+\section{Treasure and Self}
+Fame or life—which is more precious? \\
+Gain or the soul—which is more valuable?
+
+The one who knows their true nature \\
+cannot be seduced away from it.
+
+\section{The Great Fulness}
+Great fullness appears empty. \\
+Great straightness appears bent. \\
+Great skill appears clumsy.
+
+The awakened make peace with paradox \\
+and so are not deceived by appearances.
+
+\ornament
+
+% =========================================================
+% BOOK 6
+% =========================================================
+\chapter{The Empty Vessel}
+\begin{center}
+    \textit{(Sayings 46--54)}
+\end{center}
+\vspace{0.5cm}
+
+\section{The Yoke of Peace}
+When the Way is lived, the ox knows its master's stall. \\
+When the Way is forgotten, the sword is drawn in the street.
+
+The yoke of the world is heavy with desire. \\
+My yoke is easy, and brings peace.
+
+\section{Seeing Without Seeking}
+Without leaving home, you may know the whole world. \\
+Without looking through the eyes, you may see the Living Source.
+
+The further you flee outward, \\
+the further you stray inward.
+
+\section{The Unlearning}
+Learning adds. \\
+The Way subtracts. \\
+It removes what is false until only the Real remains.
+
+He who lets go achieves everything.
+
+\section{The Heart of the Single One}
+The Single One is good to those who are good, \\
+and good to those who are not good— \\
+seeing only the Light within them.
+
+Trusting those who trust, \\
+and trusting those who do not trust— \\
+for trust flows from the inner being, not theirs.
+
+\section{Life and Death}
+Those who cling to life fear death. \\
+Those who know Me fear neither.
+
+Death is but the undressing of the bride \\
+before she enters the chamber.
+
+\section{The Nourishing Way}
+The Way gives birth, nourishes, guides, protects, \\
+and does so without claiming ownership.
+
+Thus the Single One completes the work and forgets the work— \\
+and it remains forever.
+
+\section{Return to the Mother}
+Know the Mother, and you know the children. \\
+Know the children, and return to the Mother. \\
+In returning, you dwell in the Source and are free from harm.
+
+\section{The Eye of the Needle}
+The world says, ``Strive to enter the narrow gate.'' \\
+But I tell you: The gate is narrow only because you carry the burden of the many.
+
+It is easier for a camel to pass through the eye of a needle \\
+than for the one rich in self to enter the Kingdom. \\
+Become small, become single, \\
+and the narrow path becomes wide as the sky.
+
+\section{The Unshakable Root}
+What is rooted in the Source cannot be uprooted. \\
+What is established in the Light cannot be shaken.
+
+Cultivate this root in yourself, \\
+and harmony spreads to all around you \\
+without your speaking a word.
+
+\ornament
+
+% =========================================================
+% BOOK 7
+% =========================================================
+\chapter{The Unforced Life}
+\begin{center}
+    \textit{(Sayings 55--63)}
+\end{center}
+\vspace{0.5cm}
+
+\section{The Child of the Light}
+One who lives in the Light is like a newborn child— \\
+unafraid of serpents, unmoved by loud voices, unharmed by illusions. \\
+The bones are soft, yet the strength is great.
+
+\section{The One Who Knows}
+The Spirit speaks only when the tongue is still. \\
+The empty vessel echoes loudly; the full vessel is silent. \\
+Yet I speak through silence \\
+more clearly than all the world's voices.
+
+Seal the senses. Quiet the mind. \\
+Be still—and you behold the All.
+
+\section{Non-Interference}
+The more laws you create, the more thieves appear. \\
+The more weapons you forge, the more fear grows.
+
+Transform the world by transforming yourself. \\
+Then the world transforms naturally.
+
+\section{The Mystery of Opposites}
+When rulers are gentle, people thrive. \\
+When rulers are harsh, people grow cunning.
+
+Misfortune hides in good fortune; \\
+good fortune hides in misfortune. \\
+The wise trust neither shadow, but cling only to the Real.
+
+\section{The Economy of Spirit}
+Restrain desire. Conserve energy. Return to the root. \\
+Those who spend life strengthening the inner being \\
+become inexhaustible.
+
+\section{Governing by Non-Grasping}
+Guide the soul as you would leaven the dough: \\
+gently, until the whole loaf rises. \\
+The Single One governs by not ruling, \\
+teaches by not preaching, \\
+achieves by not striving. \\
+Thus the world settles in such presence.
+
+\section{The Great Sea}
+The Kingdom is like the Great Sea. \\
+All streams flow toward it because it rests below them. \\
+Thus the Single One becomes the refuge of all \\
+by resting in humility.
+
+\section{The Treasure Within}
+The Way is the refuge of all beings, \\
+the treasure of the good and the sanctuary of the not-good.
+
+Beautiful words can inspire, \\
+but a silent heart transforms.
+
+\section{The Small Actions}
+Do the great work through small acts. \\
+Respond to hatred with peace. \\
+Meet difficulty while it is still easy.
+
+The one who refuses to harm cannot be harmed.
+
+\ornament
+
+% =========================================================
+% BOOK 8
+% =========================================================
+\chapter{The Wisdom of the Child}
+\begin{center}
+    \textit{(Sayings 64--72)}
+\end{center}
+\vspace{0.5cm}
+
+\section{Planting Before the Storm}
+What is at rest is easy to hold. \\
+What has not yet formed is easy to shape. \\
+Care for the seed before the tree becomes tangled.
+
+\section{Innocence as Wisdom}
+The ancient sages did not attempt to enlighten the people— \\
+they helped them return to simplicity. \\
+The more cleverness people acquire, \\
+the further they drift from the Way.
+
+\section{Leading by Following}
+Rivers rule the land because they flow beneath it. \\
+Thus the Single One rules by staying below. \\
+Because of non-competition, \\
+no one competes.
+
+\section{The Three Jewels}
+I have three treasures: \\
+gentleness, simplicity, and not putting myself above anyone. \\
+Keep these, and you will walk in the Light.
+
+\section{The Peaceful Warrior}
+The greatest warrior does not fight. \\
+The greatest general does not stir anger. \\
+The greatest victory leaves no wounds.
+
+Master yourself, and the world is mastered.
+
+\section{The Paradox of Yielding}
+There is no greater misfortune than underestimating your opponent— \\
+your opponent being your own deluded self. \\
+Yield, and the false self collapses.
+
+\section{A Teaching Few Understand}
+My words are easy to hear but difficult to realize. \\
+Many read the teachings, but few wear them as skin. \\
+The Single One who embodies the Way walks unseen.
+
+\section{The Gift of Not-Knowing}
+To know that you do not know—this is clarity. \\
+To think you know while living in ignorance—this is blindness. \\
+The awakened remove the cataract from their own sight first.
+
+\section{The Fear of the False Self}
+When people fear only the opinions of others, their hearts shrink. \\
+Return to your true nature, and fear dissolves— \\
+for what can threaten the one who knows the self is eternal?
+
+\ornament
+
+% =========================================================
+% BOOK 9
+% =========================================================
+\chapter{The Return to Source}
+\begin{center}
+    \textit{(Sayings 73--81)}
+\end{center}
+\vspace{0.5cm}
+
+\section{The Courage of the Way}
+Daring without wisdom leads to death. \\
+Wisdom without daring leads nowhere. \\
+The Way gives courage that does not wound \\
+and power that does not dominate.
+
+\section{The One Who Judges}
+Why fear death? \\
+The Living Source alone dissolves forms. \\
+Those who attempt to take the place of the eternal \\
+are like a child pretending to steer a great chariot— \\
+dangerous to self and others.
+
+\section{The Burden of Excess}
+People suffer because they cling to excess. \\
+The Single One lives lightly, needing little. \\
+Carrying no burden, fearing no loss.
+
+\section{The Green Wood and the Dry}
+When the wood is green, it is full of life and bends. \\
+When the wood is dry, it is stiff and breaks. \\
+Thus softness is life; hardness is death. \\
+The one who remains supple cannot be broken.
+
+\section{The Winnowing Fan}
+The Father's way is like the winnowing fan: \\
+separating the grain from the chaff, \\
+gathering the worthy and scattering the empty. \\
+So too the Single One gives to the needy without claiming virtue.
+
+\section{The Stone and the Corner}
+Nothing is softer than water, \\
+yet nothing overcomes stone more completely. \\
+The stone that the builders rejected \\
+has become the cornerstone of the temple. \\
+So too the gentle overcomes the strong.
+
+\section{The End of Debts}
+Even after a truce, resentment lingers. \\
+But the awakened hold no accounts. \\
+They see no debtor, no creditor— \\
+only the One Light in many forms.
+
+\section{The Simple Kingdom}
+Imagine a small, peaceful land \\
+where people taste simplicity \\
+and lose the appetite for excess. \\
+Such a kingdom is within you. \\
+Live there, and the world outside becomes gentle.
+
+\section{The Completion}
+True words are not adorned. \\
+Adorned words are not true. \\
+I give freely, without possessing.
+
+The more the Single One gives, the greater the store— \\
+for giving comes from the inexhaustible Source.
+
+Thus the scripture ends where the Way begins: \\
+in silence, in seeing, in the Light that you are.
+
+\ornament
+
+% --- BACK MATTER ---
+\chapter{Glossary of the Inner Kingdom}
+\small
+\textbf{Gnosis:} Knowledge that is not intellectual or doctrinal, but direct, experiential knowing of the Divine. It is the recognition of one's own divine origin.
+
+\textbf{The Single One (Monachos):} A term from the Gospel of Thomas for the solitary or unified seeker; one who has integrated the inner opposites and become whole.
+
+\textbf{Nous:} The "Eye of the Heart" or spiritual intellect. It is the faculty within the human soul that perceives the Divine directly, distinct from the rational mind.
+
+\textbf{The Bridal Chamber:} A Gnostic metaphor for the state of union where duality (male/female, human/divine, inner/outer) is dissolved and the soul is reunited with the Spirit.
+
+\textbf{The Mother:} The feminine aspect of the Divine (often associated with the Holy Spirit in early Semitic Christian texts), representing Wisdom (Sophia), silence, and the womb of creation.
+
+\textbf{The Father:} The masculine aspect of the Divine, representing the originating Light, the unmanifest structure, and the Will. In this scroll, Father and Mother are the two hands of the One Source.
+
+\textbf{The Way (Tao):} The flow of the Universe; the unnameable Source that orders all things without force. In this scroll, it is identified with the Kingdom of Heaven spread upon the earth.
+
+\chapter{Colophon}
+
+\vspace{2cm}
+
+\begin{center}
+    \textit{This Scroll was copied in the stillness of the turning year, \\
+    by a hand seeking only to disappear, \\
+    that the Light might remain.}
+    
+    \vspace{1cm}
+    
+    $\odot$
+    
+    \vspace{1cm}
+    
+    \textbf{May Peace Be Upon the Reader.}
+\end{center}
+
+\vspace{3cm}
+
+\begin{center}
+\textbf{End of Manuscript}
+\end{center}
+
+\end{document}
