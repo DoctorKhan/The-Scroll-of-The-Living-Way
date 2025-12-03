@@ -1,15 +1,13 @@
 \documentclass[11pt, a4paper]{book}
 
-% --- UNIVERSAL PREAMBLE BLOCK ---
+% --- UNIVERSAL PREAMBLE BLOCK (PDFLATEX COMPATIBLE) ---
 \usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
-\usepackage{fontspec}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
 
-\usepackage[english, provide=*]{babel}
-
-\babelprovide[import, onchar=ids fonts]{english}
-
-% Set default/Latin font to Sans Serif in the main (rm) slot
-\babelfont{rm}{Noto Sans}
+% Use Noto Sans as the default font (compatible with pdflatex)
+\usepackage[sfdefault]{noto}
 
 % Add because main language is not English (not strictly needed here but good practice)
 \usepackage{enumitem}
@@ -65,9 +63,9 @@
     
     \vspace{3cm}
     
-    \textit{"The Kingdom is within you, \\
+    \textit{``The Kingdom is within you, \\
     and it is spread upon the earth, \\
-    but people do not see it."}
+    but people do not see it.''}
     
     \vspace{4cm}
     
@@ -82,7 +80,7 @@
 
 \chapter{Preface of the Scribe}
 
-\textit{To the one who finds this scroll...}
+\textit{To the one who finds this scroll\dots}
 
 Do not look for the author of these words in history, for the Living One is not of the past, but of the Eternal Now.
 
