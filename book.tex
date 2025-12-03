@@ -1,21 +1,24 @@
 \documentclass[10pt, openright]{book}
 
 % --- KDP 5x8 PAPERBACK CONFIGURATION ---
+% 5x8 inch trim size.
+% 'inner' margin is larger (0.75in) to account for the spine binding (gutter).
+% 'outer' margin is smaller (0.5in) to maximize reading space.
 \usepackage[paperwidth=5in, paperheight=8in, top=0.75in, bottom=0.75in, outer=0.5in, inner=0.75in]{geometry}
 
 % --- TYPOGRAPHY ---
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-\usepackage{ebgaramond} % The Classic Serif Font
-\usepackage{microtype}  % Essential for spacing
+\usepackage{ebgaramond} % The Classic Serif Font (Time-honored and legible)
+\usepackage{microtype}  % Essential for professional typesetting (smooths edges)
 
 % --- STYLING PACKAGES ---
 \usepackage{titlesec}
 \usepackage{fancyhdr}
 \usepackage{parskip}
 \usepackage{amssymb}
-\usepackage{emptypage}
+\usepackage{emptypage} % Prevents page numbers/headers on blank pages
 
 % --- 1. CHAPTER STYLING (The "Books") ---
 \titleformat{\chapter}[display]
@@ -25,7 +28,7 @@
   {\Huge\bfseries} % Title style
 \titlespacing*{\chapter}{0pt}{0pt}{40pt}
 
-% --- 2. SAYING STYLING (THE FIX) ---
+% --- 2. SAYING STYLING (The "Statuary" Look) ---
 % We use [display] to stack the number above the title
 \titleformat{\section}[display]
   {\normalfont\centering} % Center everything
@@ -36,11 +39,12 @@
 % Adjust spacing: {left}{top}{bottom}
 \titlespacing*{\section}{0pt}{1.0ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
-% PREVENTS BREAKING SAYINGS ACROSS PAGES
+% --- 3. PAGE BREAK LOGIC ---
+% CRITICAL: This command ensures a saying is never split across pages.
+% If it doesn't fit, it moves to the next page entirely.
 \newcommand{\sectionbreak}{\filbreak}
 
-
-% --- 3. ORNAMENTS ---
+% --- 4. ORNAMENTS ---
 \newcommand{\ornament}{
     \vspace{1.5cm}
     \begin{center}
@@ -49,7 +53,7 @@
     \vspace{1.5cm}
 }
 
-% --- 4. HEADER/FOOTER ---
+% --- 5. HEADER/FOOTER ---
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[CO]{\scshape\small The Scroll of the Living Way} 
@@ -65,10 +69,8 @@
     \vspace*{1.5cm}
     {\Huge \textsc{The Scroll of}\\ \textsc{The Living Way}} \\
     \vspace{0.5cm}
-
-    {\large \textit{The 81 Sayings of Yeshua the Living One}}
+    {\large \textit{The 81 Sayings of Yeshua the Living One}} \\
     \vspace{2cm}
-
     \textbf{A Gnostic Tao for the Children of Light}
     \vfill
     {\small Compiled \& Prepared for the Seeker of Gnosis}
