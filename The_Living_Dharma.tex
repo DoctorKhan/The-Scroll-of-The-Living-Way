@@ -1,0 +1,374 @@
+\documentclass[10pt, openright]{book}
+
+% --- KDP 5x8 PAPERBACK CONFIGURATION ---
+% 5x8 inch trim size.
+% 'inner' margin is larger (0.75in) to account for the spine binding (gutter).
+% 'outer' margin is smaller (0.5in) to maximize reading space.
+\usepackage[paperwidth=5in, paperheight=8in, top=0.75in, bottom=0.75in, outer=0.5in, inner=0.75in]{geometry}
+
+% --- TYPOGRAPHY ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{ebgaramond} % The Classic Serif Font (Time-honored and legible)
+\usepackage{microtype}  % Essential for professional typesetting (smooths edges)
+\usepackage{chngcntr}   % For continuous numbering
+
+% --- STYLING PACKAGES ---
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{parskip}
+\usepackage{amssymb}
+\usepackage{emptypage} % Prevents page numbers/headers on blank pages
+
+% --- 1. CHAPTER STYLING (The "Books") ---
+\titleformat{\chapter}[display]
+  {\normalfont\centering} % Global style for chapter
+  {\vspace{-1cm}\itshape\large Chapter \thechapter} % Label "Chapter I"
+  {10pt} % Space between label and title
+  {\Huge\bfseries} % Title style
+\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+
+% --- 2. SAYING STYLING (The "Statuary" Look) ---
+% We use [display] to stack the number above the title
+\counterwithout{section}{chapter} % Continuous numbering 1-24
+\titleformat{\section}[display]
+  {\normalfont\centering} % Center everything
+  {\vspace{1em}\Huge\bfseries\thesection} % THE NUMBER: Huge and Bold
+  {0.3em} % Small gap between number and title
+  {\large\scshape} % THE TITLE: Small Caps, slightly smaller than number
+  
+% Adjust spacing: {left}{top}{bottom}
+\titlespacing*{\section}{0pt}{1.0ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+% --- 3. PAGE BREAK LOGIC ---
+% CRITICAL: This command ensures a saying is never split across pages.
+% If it doesn't fit, it moves to the next page entirely.
+\newcommand{\sectionbreak}{\filbreak}
+
+% --- 4. ORNAMENTS ---
+\newcommand{\ornament}{
+    \vspace{1.5cm}
+    \begin{center}
+        \large $\cdot$ $\odot$ $\cdot$
+    \end{center}
+    \vspace{1.5cm}
+}
+
+% --- 5. HEADER/FOOTER ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[CO]{\scshape\small The Book of Awakening} 
+\fancyhead[CE]{\scshape\small Yeshua the Living One}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+% --- TITLE PAGE ---
+\begin{titlepage}
+    \centering
+    \vspace*{1.5cm}
+    {\Huge \textsc{The Book of}\\ \textsc{Awakening}} \\
+    \vspace{0.5cm}
+    {\large \textit{The Living Dharma of Yeshua}} \\
+    \vspace{2cm}
+    \textbf{The Path from Forgetting to Clarity}
+    \vfill
+    {\small Transcribed for the One Who Seeks to See}
+    \vspace{1cm}
+\end{titlepage}
+
+\frontmatter
+\tableofcontents
+
+\chapter{Prologue}
+\textit{To the one who seeks to see\dots}
+
+Yeshua said:
+
+``First there is forgetting: the soul sleeps in the garment of the world.
+Then there is awakening: the soul opens its eyes and sees that it is not the garment.
+Finally there is remembering: the soul knows it is the Light itself.
+
+This is the scroll of Awakening. Here we accept the duality of the watcher and the watched, not to remain divided, but to gain clarity. For you cannot be what you observe. You are the Seer, not the seen.''
+
+\ornament
+
+\mainmatter
+
+% =========================================================
+% CHAPTER 1
+% =========================================================
+\chapter{The Breath of the Living Source}
+
+\section{The Sacred Breath}
+Yeshua said: \\
+``The breath you call yours \\
+was given before you had a name. \\
+Follow it gently— \\
+and you will find the One \\
+who breathes all things into being \\
+and gathers them home again.''
+
+\section{The Guest House}
+``A thought knocks at your door \\
+and pretends to be the master. \\
+Do not drive it away; \\
+do not bow before it. \\
+Simply open the door of your seeing— \\
+and watch the true Master return.''
+
+\section{The Rhythm of the All}
+``Every inhale is the world entering you. \\
+Every exhale is your soul returning to the world. \\
+Between these two tides \\
+lies a stillness \\
+where the ocean and the drop \\
+remember they are one.''
+
+\ornament
+
+% =========================================================
+% CHAPTER 2
+% =========================================================
+\chapter{Mindfulness of the Inner Light}
+
+\section{The Lamp of the Mind}
+Yeshua said: \\
+``The mind is a lamp \\
+set upon the altar of the heart. \\
+Clear its flame, \\
+and the whole room of the world \\
+shines with it.''
+
+\section{The Seeing Itself}
+``You see the sky, \\
+so you are not the sky. \\
+You see the thought, \\
+so you are not the thought. \\
+Look into the one who sees— \\
+and the Seer will open \\
+like a flower of light \\
+with no one at the center.''
+
+\section{The Birth of Light}
+``Sit until the silence becomes your companion. \\
+Sit until the watcher dissolves. \\
+Then you will know \\
+that the Light you sought \\
+was waiting \\
+beneath the next unspoken breath.''
+
+\ornament
+
+% =========================================================
+% CHAPTER 3
+% =========================================================
+\chapter{The Nature of Suffering}
+
+\section{The Shadow and the Light}
+``A shadow follows your feet \\
+and whispers, `I am you.' \\
+But you are the sun \\
+that casts the shadow— \\
+untouched, \\
+unbroken, \\
+unbound.''
+
+\section{The Garment of Desire}
+``When desire arises, \\
+let it rise as mist on a warm morning. \\
+Touch it lightly, \\
+as one touches a garment hanging loosely. \\
+Remember: \\
+you are the wearer, \\
+not the woven thread.''
+
+\section{Facing the Shadow}
+``The darkness you refuse to face \\
+becomes your jailer. \\
+The darkness you turn toward \\
+becomes your doorway. \\
+Bow to it with open eyes— \\
+and it will scatter \\
+like crows before dawn.''
+
+\ornament
+
+% =========================================================
+% CHAPTER 4
+% =========================================================
+\chapter{The Path of Seeing Through Illusion}
+
+\section{The Ocean and the Wave}
+Yeshua said: \\
+``A thought rises— \\
+a single wave \\
+tasting the open air. \\
+Follow it, and you forget the sea. \\
+Be still, \\
+and the wave returns \\
+to the depth \\
+that has always been yours.''
+
+\section{The Space Around the Fire}
+``Anger flames high \\
+when fed by the self. \\
+Stand one breath away, \\
+as the clear night \\
+stands from the campfire. \\
+The fire burns itself out, \\
+and the night \\
+remains unburned.''
+
+\section{The Painter and the Paint}
+``The world is a painting \\
+brushed upon the canvas of your seeing. \\
+Seek the painter, \\
+and you will find only light. \\
+Seek the light, \\
+and you will find \\
+no painter at all.''
+
+\ornament
+
+% =========================================================
+% CHAPTER 5
+% =========================================================
+\chapter{Compassion Born of Non-Self}
+
+\section{The Seeing of Compassion}
+``Compassion is not the trembling \\
+of a tender heart. \\
+It is the clear sight \\
+that no leaf \\
+falls apart from the tree, \\
+and no soul \\
+stands apart from the One.''
+
+\section{Healing the Inner Wound}
+``When another wounds you, \\
+listen for the wound beneath their hand. \\
+It is their cry, not your injury. \\
+Heal the echo within yourself— \\
+and the blow transforms \\
+into a bell \\
+calling you home.''
+
+\section{The Natural Radiance}
+``When the self grows quiet, \\
+love spills out \\
+as naturally \\
+as water reflecting the moon. \\
+You need not command it— \\
+you need only \\
+step out of the way.''
+
+\ornament
+
+% =========================================================
+% CHAPTER 6
+% =========================================================
+\chapter{The Kingdom as the Present Moment}
+
+\section{The Kingdom is Now}
+Yeshua said: \\
+``The Kingdom hides \\
+in the folds of the present moment \\
+like a jewel in a child's hand. \\
+Do not search in the distance. \\
+Sit, breathe, listen— \\
+and the jewel opens.''
+
+\section{The Living Moment}
+``The past is a footprint in dust. \\
+The future is a story in ink, \\
+yet to be read. \\
+This breath alone is alive— \\
+and the Living One \\
+whispers within it.''
+
+\section{The Dream of Time}
+``When you step fully into now, \\
+the watchers of fear fall silent. \\
+For they dwell only in yesterday's shadows \\
+and tomorrow's storms. \\
+Stand in the clear day of the present— \\
+and they cannot touch you.''
+
+\ornament
+
+% =========================================================
+% CHAPTER 7
+% =========================================================
+\chapter{Liberation: The Ascent of the Mindful Soul}
+
+\section{Mist Before the Dawn}
+``The powers rise \\
+like fog along the valley floor. \\
+But the awakened soul says: \\
+`You cannot bind me, \\
+for I have seen the sun.' \\
+At this, \\
+the fog remembers \\
+what it is \\
+and melts.''
+
+\section{The Trap of Belief}
+``Do not flee the world— \\
+the world is a passing cloud. \\
+Flee the one \\
+who believes the cloud is a prison. \\
+For that belief \\
+is the iron gate, \\
+and clear seeing \\
+is the key that was always in your hand.''
+
+\section{The Rising Flame}
+``When grasping loosens \\
+and resistance unwinds, \\
+the soul lifts itself \\
+as a flame lifts toward the sky— \\
+not by effort, \\
+but by nature.''
+
+\ornament
+
+% =========================================================
+% CHAPTER 8
+% =========================================================
+\chapter{The Great Return to the Self-That-Is-No-Self}
+
+\section{The Nameless One}
+Yeshua said: \\
+``When all that you are not \\
+falls away like autumn leaves, \\
+what remains \\
+is the bare tree of your being— \\
+rooted in the Nameless One, \\
+whose breath is the wind \\
+through every branch.''
+
+\section{Fullness and Emptiness}
+``When emptiness is seen clearly, \\
+it overflows with fullness. \\
+When fullness is held lightly, \\
+it reveals its empty heart. \\
+Between the two dances \\
+the One \\
+who is neither and both.''
+
+\section{Already Awakened}
+``Blessed is the one \\
+who drops even the longing to awaken. \\
+For at the moment of release, \\
+the veil falls, \\
+and they see \\
+that awakening \\
+was the very ground \\
+beneath their feet.''
+
+\ornament
+
+\end{document}
