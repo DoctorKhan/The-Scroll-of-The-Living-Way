@@ -5,13 +5,18 @@ cmd=${1:-}
 
 case "$cmd" in
   rebuild|*)
-  (
-    # Build PDFs from TeX
-    pdflatex -interaction=nonstopmode The_Living_Way.tex >/dev/null 2>&1 || exit 1
-    pdflatex -interaction=nonstopmode The_Living_Suttas.tex >/dev/null 2>&1 || exit 1
-	    # Regenerate HTML from TeX using pandoc
-	    pandoc -s --from=latex --to=html The_Living_Way.tex -o The_Living_Way.html
-	    pandoc -s --from=latex --to=html The_Living_Suttas.tex -o The_Living_Suttas.html
-  ) &
+    echo "Starting build process..."
+    
+    # Build PDFs
+    echo "Compiling The_Living_Way.tex..."
+    pdflatex -interaction=nonstopmode The_Living_Way.tex >/dev/null || echo "Warning: PDF build for Living Way had errors."
+    
+    echo "Compiling The_Living_Suttas.tex..."
+    pdflatex -interaction=nonstopmode The_Living_Suttas.tex >/dev/null || echo "Warning: PDF build for Living Suttas had errors."
+
+    # Build HTML using the new bash script
+    ./tools/build_html.sh
+    
+    echo "All builds complete."
     ;;
 esac

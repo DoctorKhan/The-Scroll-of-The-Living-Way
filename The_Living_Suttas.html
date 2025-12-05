@@ -1,682 +1,647 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>The_Living_Suttas</title>
-  <style>
-    html {
-      color: #1a1a1a;
-      background-color: #fdfdfd;
-    }
-    body {
-      margin: 0 auto;
-      max-width: 36em;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      hyphens: auto;
-      overflow-wrap: break-word;
-      text-rendering: optimizeLegibility;
-      font-kerning: normal;
-    }
-    @media (max-width: 600px) {
-      body {
-        font-size: 0.9em;
-        padding: 12px;
-      }
-      h1 {
-        font-size: 1.8em;
-      }
-    }
-    @media print {
-      html {
-        background-color: white;
-      }
-      body {
-        background-color: transparent;
-        color: black;
-        font-size: 12pt;
-      }
-      p, h2, h3 {
-        orphans: 3;
-        widows: 3;
-      }
-      h2, h3, h4 {
-        page-break-after: avoid;
-      }
-    }
-    p {
-      margin: 1em 0;
-    }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
-    }
-    img {
-      max-width: 100%;
-    }
-    svg {
-      height: auto;
-      max-width: 100%;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.4em;
-    }
-    h5, h6 {
-      font-size: 1em;
-      font-style: italic;
-    }
-    h6 {
-      font-weight: normal;
-    }
-    ol, ul {
-      padding-left: 1.7em;
-      margin-top: 1em;
-    }
-    li > ol, li > ul {
-      margin-top: 0;
-    }
-    blockquote {
-      margin: 1em 0 1em 1.7em;
-      padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
-      color: #606060;
-    }
-    code {
-      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
-      font-size: 85%;
-      margin: 0;
-      hyphens: manual;
-    }
-    pre {
-      margin: 1em 0;
-      overflow: auto;
-    }
-    pre code {
-      padding: 0;
-      overflow: visible;
-      overflow-wrap: normal;
-    }
-    .sourceCode {
-     background-color: transparent;
-     overflow: visible;
-    }
-    hr {
-      border: none;
-      border-top: 1px solid #1a1a1a;
-      height: 1px;
-      margin: 1em 0;
-    }
-    table {
-      margin: 1em 0;
-      border-collapse: collapse;
-      width: 100%;
-      overflow-x: auto;
-      display: block;
-      font-variant-numeric: lining-nums tabular-nums;
-    }
-    table caption {
-      margin-bottom: 0.75em;
-    }
-    tbody {
-      margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    th {
-      border-top: 1px solid #1a1a1a;
-      padding: 0.25em 0.5em 0.25em 0.5em;
-    }
-    td {
-      padding: 0.125em 0.5em 0.25em 0.5em;
-    }
-    header {
-      margin-bottom: 4em;
-      text-align: center;
-    }
-    #TOC li {
-      list-style: none;
-    }
-    #TOC ul {
-      padding-left: 1.3em;
-    }
-    #TOC > ul {
-      padding-left: 0;
-    }
-    #TOC a:not(:hover) {
-      text-decoration: none;
-    }
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Living Suttas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-start: #fdfbf7;
+            --bg-end: #e8e4d4;
+            --text-main: #2c2c2c;
+            --text-muted: #5a5a5a;
+            --accent: #8c7b6c;
+            --btn-dark: #2c2c2c;
+            --btn-light: #f5f3e8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'EB Garamond', 'Garamond', serif;
+            background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-end) 100%);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            text-align: left;
+            max-width: 800px;
+            width: 100%;
+            padding: 4rem 3rem;
+            background-color: rgba(255, 255, 255, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h1, h2, h3 {
+            color: #1a1a1a;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 1px solid rgba(140, 123, 108, 0.3);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            color: var(--accent);
+            margin-top: 2rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.15rem;
+        }
+
+        ul, ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 1.15rem;
+        }
+
+        blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: var(--text-muted);
+            margin: 2rem 0;
+            background: rgba(255,255,255,0.3);
+            padding: 1rem 1.5rem;
+            border-radius: 0 4px 4px 0;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        a:hover {
+            border-color: var(--accent);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #d4d0c0;
+            margin: 3rem auto;
+            width: 50%;
+            opacity: 0.6;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        
+        th, td {
+            padding: 1rem;
+            border: 1px solid rgba(140, 123, 108, 0.3);
+            text-align: left;
+        }
+        
+        th {
+            background-color: rgba(140, 123, 108, 0.1);
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 2rem 1.5rem; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
 </head>
 <body>
-<div class="titlepage">
-<p><span><span class="smallcaps">The Book of</span><br />
-<span class="smallcaps">Awakening</span></span><br />
-<span><em>Suttas of the Living Buddha</em></span><br />
-<strong>The Path from Forgetting to Clarity</strong><br />
-<span>Edition 2.0 <span class="math inline">⋅</span> December 5,
-2025</span><br />
-<span>Transcribed for the One Who Seeks to See</span></p>
-</div>
-<h1 id="prologue">Prologue</h1>
-<p><em>To the one who seeks to see…</em></p>
-<p>Yeshua said:</p>
-<p>“First there is forgetting: the soul sleeps in the garment of the
-world. Then there is awakening: the soul opens its eyes and sees that it
-is not the garment. Finally there is remembering: the soul knows it is
-the Light itself.</p>
-<p>This is the scroll of Awakening. Here we accept the duality of the
-watcher and the watched, not to remain divided, but to gain clarity. For
-you cannot be what you observe. You are the Seer, not the seen.”
-Whenever you are struck,<br />
-ask: ‘What is the first arrow I cannot avoid,<br />
-and what is the second arrow I am adding?’<br />
-Release the second,<br />
-and offer the first to the Father in trust.<br />
-</p>
-<div class="center">
-<p><span class="math inline">⋅</span> <span class="math inline">⊙</span>
-<span class="math inline">⋅</span></p>
-</div>
-<h1 id="the-breath-of-the-living-source">The Breath of the Living
-Source</h1>
-<h2 id="the-sacred-breath">The Sacred Breath</h2>
-<p>Yeshua said:<br />
-“The breath you call yours<br />
-was given before you had a name.<br />
-Follow it gently<br />
-back to its hidden spring,<br />
-and you will find the One<br />
-who breathes all things into being<br />
-and gathers them home again.”<br />
-</p>
-<h2 id="the-guest-house">The Guest House</h2>
-<p>If a thought grips you,<br />
-pause before you act.<br />
-Feel your feet upon the earth,<br />
-take three quiet breaths,<br />
-and let the river pass before you<br />
-like clouds across the sky.<br />
-“A thought knocks at your door<br />
-and pretends to be the master.<br />
-Do not drive it away;<br />
-do not fall at its feet.<br />
-Simply open the door of your seeing<br />
-and watch it come and go.<br />
-When you remember a hurt,<br />
-place your hand over your heart<br />
-and say, ‘Here is pain; may it be healed.’<br />
-Say the same for the one who wounded you.<br />
-In this, you step out of the chain<br />
-and stand in the Light.<br />
-The true Master<br />
-does not arrive or depart—<br />
-He was the space of the house<br />
-all along.”<br />
-</p>
-<h2 id="the-rhythm-of-the-all">The Rhythm of the All</h2>
-<p>Yeshua said:<br />
-“Every inhale is the world entering you.<br />
-Every exhale is your soul returning to the world.<br />
-Between these two tides<br />
-lies a stillness<br />
-where ocean and drop remember<br />
-they are one water.<br />
-Bring your whole attention<br />
-to this simple breath.<br />
-In that seeing,<br />
-the current of thoughts is cut<br />
-like a rope beneath a bell,<br />
-Choose one small, ordinary act each day—<br />
-washing a cup, tying a shoe—<br />
-and do it as if nothing else exists.<br />
-Let this be your gate into the Kingdom.<br />
-and only the clear ringing<br />
-of the present remains.”</p>
-<div class="center">
-<p><span class="math inline">⋅</span> <span class="math inline">⊙</span>
-<span class="math inline">⋅</span></p>
-</div>
-<h1 id="mindfulness-of-the-inner-light">Mindfulness of the Inner
-Light</h1>
-<h2 id="the-lamp-of-the-mind">The Lamp of the Mind</h2>
-<p>Yeshua said:<br />
-“The mind is a lamp<br />
-set upon the altar of the heart.<br />
-When it turns toward many images,<br />
-shadows crowd the room.<br />
-Turn the lamp toward this present breath,<br />
-this single step,<br />
-Whenever fear of yesterday or tomorrow arises,<br />
-gently return to what your hands are touching now.<br />
-Let the present moment<br />
-be the ark that carries you through the waters.<br />
-this bare moment,<br />
-and its light becomes a sword—<br />
-cutting through drifting thoughts<br />
-as a sharp wind scatters smoke.<br />
-What survives the cut<br />
-is what is truly here.”<br />
-</p>
-<h2 id="the-seeing-itself">The Seeing Itself</h2>
-<p>“You see the sky,<br />
-so you are not the sky.<br />
-You see the thought as it arises now,<br />
-so you are not the thought.<br />
-You see even the sense of ‘I’<br />
-appearing and fading in this moment,<br />
-so you are not that either.<br />
-Rest your attention in the seeing itself—<br />
-still, awake, present—<br />
-and the Seer opens<br />
-like a flower of light<br />
-with no one at the center.”<br />
-</p>
-<h2 id="the-birth-of-light">The Birth of Light</h2>
-<p>“Sit until the silence<br />
-no longer seems a stranger.<br />
-Sit until the watcher grows thin<br />
-as morning mist.<br />
-Then you will know<br />
-that the Light you sought<br />
-was waiting, patient and untroubled,<br />
-beneath the next unspoken breath.”</p>
-<div class="center">
-<p><span class="math inline">⋅</span> <span class="math inline">⊙</span>
-<span class="math inline">⋅</span></p>
-</div>
-<h1 id="the-nature-of-suffering">The Nature of Suffering</h1>
-<h2 id="the-shadow-and-the-light">The Shadow and the Light</h2>
-<p>“A shadow follows your feet<br />
-and whispers, ‘I am you.’<br />
-But you are the sun<br />
-that casts the shadow—<br />
-untouched,<br />
-unbroken,<br />
-unbound.<br />
-Suffering begins<br />
-when you bow to the shadow.<br />
-Freedom begins<br />
-when you remember the Light.”<br />
-</p>
-<h2 id="the-garment-of-desire">The Garment of Desire</h2>
-<p>“When desire arises,<br />
-let it rise like mist on a warm morning.<br />
-Feel it on the skin,<br />
-but do not call it by your name.<br />
-Touch it lightly,<br />
-as one touches a garment hanging loosely.<br />
-Remember:<br />
-you are the wearer,<br />
-not the woven thread.<br />
-Desire that is seen clearly<br />
-fades by itself<br />
-and leaves the heart clean.”<br />
-</p>
-<h2 id="facing-the-shadow">Facing the Shadow</h2>
-<p>“The first arrow is pain<br />
-when life pierces the body or the heart.<br />
-The second arrow<br />
-is the story you tell about it—<br />
-‘This should not be,’<br />
-‘This is who I am.’<br />
-You cannot always turn away<br />
-the first arrow.<br />
-But the second<br />
-is in your own hand.<br />
-Bring your attention gently<br />
-to the ache that is here now,<br />
-without name,<br />
-without judgment.<br />
-In that clear seeing,<br />
-the second arrow falls,<br />
-and the wound becomes a doorway.<br />
-Bow to the darkness with open eyes—<br />
-and it scatters<br />
-like crows before dawn.”</p>
-<div class="center">
-<p><span class="math inline">⋅</span> <span class="math inline">⊙</span>
-<span class="math inline">⋅</span></p>
-</div>
-<h1 id="the-path-of-seeing-through-illusion">The Path of Seeing Through
-Illusion</h1>
-<h2 id="the-ocean-and-the-wave">The Ocean and the Wave</h2>
-<p>Yeshua said:<br />
-“A thought rises—<br />
-a single wave<br />
-tasting the open air.<br />
-Chase it,<br />
-and you forget the sea.<br />
-Be still,<br />
-and the wave returns<br />
-to the depth<br />
-that has always been yours.<br />
-You are not the passing wave,<br />
-but the ocean that never leaves itself.”<br />
-</p>
-<h2 id="the-space-around-the-fire">The Space Around the Fire</h2>
-<p>“Anger flames high<br />
-when fed by the self.<br />
-Stand one breath away,<br />
-as the clear night<br />
-stands from the campfire.<br />
-See the heat,<br />
-feel the pull,<br />
-but do not step inside the blaze.<br />
-The fire burns itself out,<br />
-and the night<br />
-remains unburned.<br />
-So too your awareness<br />
-remains untouched<br />
-when you do not call the fire ‘I’.”<br />
-</p>
-<h2 id="the-river-of-thoughts">The River of Thoughts</h2>
-<p>Yeshua said:<br />
-“Thoughts flow through the mind<br />
-like a river in flood—<br />
-memories, fears, plans,<br />
-arguing for a thousand futures.<br />
-If you are swept into the current,<br />
-you are tossed from stone to stone.<br />
-If you stand on the bank<br />
-in the clear strength of the present,<br />
-you feel the rush,<br />
-but you do not drown.<br />
-Let your attention be a sword<br />
-of quiet seeing.<br />
-With a single, gentle stroke<br />
-it parts the waters of distraction,<br />
-and the bed of the river appears—<br />
-the still, unmoving ground<br />
-of your own being.”</p>
-<div class="center">
-<p><span class="math inline">⋅</span> <span class="math inline">⊙</span>
-<span class="math inline">⋅</span></p>
-</div>
-<h1 id="compassion-born-of-non-self">Compassion Born of Non-Self</h1>
-<h2 id="the-seeing-of-compassion">The Seeing of Compassion</h2>
-<p>“Compassion is not the trembling<br />
-of a tender heart alone.<br />
-It is the clear sight<br />
-that no leaf<br />
-falls apart from the tree,<br />
-and no soul<br />
-stands apart from the One.<br />
-When you see through the veil of ‘me’ and ‘you’,<br />
-you cannot help but care—<br />
-for every face<br />
-is your own.”<br />
-</p>
-<h2 id="healing-the-inner-wound">Healing the Inner Wound</h2>
-<p>“When another wounds you,<br />
-listen for the wound<br />
-beneath their hand.<br />
-It is their cry,<br />
-not your identity.<br />
-Heal the echo within yourself—<br />
-the place that believed<br />
-it could be diminished—<br />
-and the blow transforms<br />
-into a bell<br />
-calling you home.<br />
-Then you will bless<br />
-even the one who struck you,<br />
-for unknowingly<br />
-they pointed to your freedom.”<br />
-</p>
-<h2 id="the-natural-radiance">The Natural Radiance</h2>
-<p>“When the self grows quiet,<br />
-love spills out<br />
-as naturally<br />
-as water reflecting the moon.<br />
-You need not command it,<br />
-nor adorn it with names.<br />
-You need only<br />
-step out of the way.<br />
-Then compassion moves by itself—<br />
-no doer,<br />
-only the shining of the Heart.”</p>
-<h2 id="the-space-of-seeing">The Space of Seeing</h2>
-<p>Yeshua said:<br />
-“When you look directly<br />
-at a thought, a fear, a wound,<br />
-it steps out from your chest<br />
-and stands before you.<br />
-In that simple seeing,<br />
-space opens.<br />
-What was a prison<br />
-becomes a guest you may receive<br />
-and gently release.<br />
-What you behold,<br />
-you are no longer bound to be.”<br />
-</p>
-<h2 id="the-four-lettings-go">The Four Lettings-Go</h2>
-<p>“There are four doors<br />
-through which the false self leaves quietly:<br />
-non-violence,<br />
-non-judgment,<br />
-non-forcing,<br />
-and non-self.<br />
-When you do not wound,<br />
-the heart need not defend.<br />
-When you do not judge,<br />
-the mind need not divide.<br />
-When you do not force,<br />
-the Way moves of itself.<br />
-When you do not cling to ‘I’,<br />
-the true "I Am" may speak.<br />
-You do not disappear—<br />
-you become clear.”<br />
-</p>
-<h2 id="the-union-in-the-heart">The Union in the Heart</h2>
-<p>“In the heart that has become clear<br />
-through these lettings-go,<br />
-the Father and the Son are not two.<br />
-The Source and the Living Image<br />
-shine as one Light.<br />
-The Holy Breath<br />
-moves between them<br />
-like fire between coal and flame,<br />
-and completes their joy in you.<br />
-This is the bridal chamber within:<br />
-when you cease to wound, to judge,<br />
-to force, to cling,<br />
-you do not become empty—<br />
-you become the open room<br />
-where God and the soul<br />
-know themselves as one.""</p>
-<div class="center">
-<p><span class="math inline">⋅</span> <span class="math inline">⊙</span>
-<span class="math inline">⋅</span></p>
-</div>
-<h1 id="the-kingdom-as-the-present-moment">The Kingdom as the Present
-Moment</h1>
-<h2 id="the-kingdom-is-now">The Kingdom is Now</h2>
-<p>Yeshua said:<br />
-“The Kingdom hides<br />
-in the folds of the present moment<br />
-like a jewel in a child’s hand.<br />
-Do not search in distant heavens<br />
-or in years yet to come.<br />
-Bring your whole attention<br />
-to this breath,<br />
-this sound,<br />
-this simple act of standing here.<br />
-Such attention is a bright blade<br />
-that cuts the chains of yesterday and tomorrow.<br />
-Whoever stands thus in now<br />
-finds that the doors of the Kingdom<br />
-were never shut.”<br />
-</p>
-<h2 id="the-living-moment">The Living Moment</h2>
-<p>“The past is a footprint in dust.<br />
-The future is a story in ink,<br />
-yet to be read.<br />
-This breath alone is alive,<br />
-and the Living One<br />
-whispers within it.<br />
-Drink this breath without distraction,<br />
-and you will taste<br />
-the wine of eternity<br />
-poured into now.”<br />
-</p>
-<h2 id="the-dream-of-time">The Dream of Time</h2>
-<p>“When you step fully into now,<br />
-the watchers of fear fall silent.<br />
-For they live only<br />
-in yesterday’s shadows<br />
-and tomorrow’s storms.<br />
-Hold the present moment<br />
-as you would hold a flame—<br />
-steadily, with care.<br />
-Watched in this way,<br />
-the dream of time unravels<br />
-thread by thread,<br />
-until only naked Being remains.<br />
-Then you will see<br />
-that you never left eternity—<br />
-you only wandered in your thoughts.”</p>
-<div class="center">
-<p><span class="math inline">⋅</span> <span class="math inline">⊙</span>
-<span class="math inline">⋅</span></p>
-</div>
-<h1 id="the-fruit-of-the-way">The Fruit of the Way</h1>
-<h2 id="the-taste-of-the-tree">The Taste of the Tree</h2>
-<p>Yeshua said:<br />
-“The tree is known by its fruit,<br />
-and the heart is known<br />
-by the taste of its actions.<br />
-Do not ask, ‘Is this path true?’<br />
-Ask, ‘What does it ripen in me?’<br />
-If your seeing bears peace,<br />
-if your words bear mercy,<br />
-if your hands bear freedom from suffering,<br />
-then the root is good,<br />
-whether you name it Dharma or Kingdom.<br />
-The wise one does not cling<br />
-to the name of the tree;<br />
-he tastes the fruit<br />
-and understands.”</p>
-<div class="center">
-<p><span class="math inline">⋅</span> <span class="math inline">⊙</span>
-<span class="math inline">⋅</span></p>
-</div>
-<h1 id="liberation-the-ascent-of-the-mindful-soul">Liberation: The
-Ascent of the Mindful Soul</h1>
-<h2 id="mist-before-the-dawn">Mist Before the Dawn</h2>
-<p>“The powers rise<br />
-like fog along the valley floor—<br />
-fear, craving, confusion, pride.<br />
-But the awakened soul says:<br />
-‘You cannot bind me,<br />
-for I have seen the sun.’<br />
-At this,<br />
-the fog remembers<br />
-what it is<br />
-and melts.<br />
-Liberation is not the death of the powers,<br />
-but their recognition<br />
-as passing mist.”<br />
-</p>
-<h2 id="the-trap-of-belief">The Trap of Belief</h2>
-<p>“Do not flee the world—<br />
-the world is a passing cloud.<br />
-Flee the one<br />
-who believes the cloud is a prison.<br />
-For that belief<br />
-is the iron gate,<br />
-and clear seeing<br />
-is the key<br />
-that has always been in your hand.<br />
-When you open your fist,<br />
-you discover<br />
-there was never a lock.”<br />
-</p>
-<h2 id="the-rising-flame">The Rising Flame</h2>
-<p>“When grasping loosens<br />
-and resistance unwinds,<br />
-the soul lifts itself<br />
-as a flame lifts toward the sky—<br />
-not by effort,<br />
-but by nature.<br />
-Do not pull the flame.<br />
-Do not push the flame.<br />
-Simply remove the lid<br />
-from your own heart,<br />
-and its rising<br />
-is assured.”</p>
-<div class="center">
-<p><span class="math inline">⋅</span> <span class="math inline">⊙</span>
-<span class="math inline">⋅</span></p>
-</div>
-<h1 id="the-great-return-to-the-self-that-is-no-self">The Great Return
-to the Self-That-Is-No-Self</h1>
-<h2 id="the-nameless-one">The Nameless One</h2>
-<p>Yeshua said:<br />
-“When all that you are not<br />
-falls away like autumn leaves,<br />
-what remains<br />
-is the bare tree of your being—<br />
-rooted in the Nameless One,<br />
-whose breath is the wind<br />
-through every branch.<br />
-Do not cling to the leaves<br />
-of role and story.<br />
-Trust the root,<br />
-and winter itself<br />
-will feel like home.”<br />
-</p>
-<h2 id="fullness-and-emptiness">Fullness and Emptiness</h2>
-<p>“When emptiness is seen clearly,<br />
-it overflows with fullness.<br />
-When fullness is held lightly,<br />
-it reveals its empty heart.<br />
-Between the two dances<br />
-the One<br />
-who is neither and both—<br />
-like space,<br />
-bearing all worlds<br />
-yet never burdened.<br />
-To awaken is to rest<br />
-as this silent, shining space.”<br />
-</p>
-<h2 id="already-awakened">Already Awakened</h2>
-<p>“Blessed is the one<br />
-who drops even the longing to awaken.<br />
-For as long as you seek,<br />
-you imagine distance.<br />
-At the moment of release,<br />
-the veil falls,<br />
-and you see<br />
-that awakening<br />
-was the very ground<br />
-beneath your feet—<br />
-the Light<br />
-that never left you,<br />
-even in your deepest sleep.”</p>
-<div class="center">
-<p><span class="math inline">⋅</span> <span class="math inline">⊙</span>
-<span class="math inline">⋅</span></p>
-</div>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        
+        <div class="titlepage">
+        <p><span><span class="smallcaps">The Book of</span><br />
+        <span class="smallcaps">Awakening</span></span><br />
+        <span><em>Suttas of the Living Buddha</em></span><br />
+        <strong>The Path from Forgetting to Clarity</strong><br />
+        <span>Edition 2.0 <span class="math inline">⋅</span> December 5,
+        2025</span><br />
+        <span>Transcribed for the One Who Seeks to See</span></p>
+        </div>
+        <h1 id="prologue">Prologue</h1>
+        <p><em>To the one who seeks to see…</em></p>
+        <p>Yeshua said:</p>
+        <p>“First there is forgetting: the soul sleeps in the garment of
+        the world. Then there is awakening: the soul opens its eyes and
+        sees that it is not the garment. Finally there is remembering:
+        the soul knows it is the Light itself.</p>
+        <p>This is the scroll of Awakening. Here we accept the duality
+        of the watcher and the watched, not to remain divided, but to
+        gain clarity. For you cannot be what you observe. You are the
+        Seer, not the seen.” Whenever you are struck,<br />
+        ask: ‘What is the first arrow I cannot avoid,<br />
+        and what is the second arrow I am adding?’<br />
+        Release the second,<br />
+        and offer the first to the Father in trust.<br />
+        <div class="ornament">✦ ✦ ✦</div></p>
+        <h1 id="the-breath-of-the-living-source">The Breath of the
+        Living Source</h1>
+        <h2 id="the-sacred-breath">The Sacred Breath</h2>
+        <p>Yeshua said:<br />
+        “The breath you call yours<br />
+        was given before you had a name.<br />
+        Follow it gently<br />
+        back to its hidden spring,<br />
+        and you will find the One<br />
+        who breathes all things into being<br />
+        and gathers them home again.”<br />
+        </p>
+        <h2 id="the-guest-house">The Guest House</h2>
+        <p>If a thought grips you,<br />
+        pause before you act.<br />
+        Feel your feet upon the earth,<br />
+        take three quiet breaths,<br />
+        and let the river pass before you<br />
+        like clouds across the sky.<br />
+        “A thought knocks at your door<br />
+        and pretends to be the master.<br />
+        Do not drive it away;<br />
+        do not fall at its feet.<br />
+        Simply open the door of your seeing<br />
+        and watch it come and go.<br />
+        When you remember a hurt,<br />
+        place your hand over your heart<br />
+        and say, ‘Here is pain; may it be healed.’<br />
+        Say the same for the one who wounded you.<br />
+        In this, you step out of the chain<br />
+        and stand in the Light.<br />
+        The true Master<br />
+        does not arrive or depart—<br />
+        He was the space of the house<br />
+        all along.”<br />
+        </p>
+        <h2 id="the-rhythm-of-the-all">The Rhythm of the All</h2>
+        <p>Yeshua said:<br />
+        “Every inhale is the world entering you.<br />
+        Every exhale is your soul returning to the world.<br />
+        Between these two tides<br />
+        lies a stillness<br />
+        where ocean and drop remember<br />
+        they are one water.<br />
+        Bring your whole attention<br />
+        to this simple breath.<br />
+        In that seeing,<br />
+        the current of thoughts is cut<br />
+        like a rope beneath a bell,<br />
+        Choose one small, ordinary act each day—<br />
+        washing a cup, tying a shoe—<br />
+        and do it as if nothing else exists.<br />
+        Let this be your gate into the Kingdom.<br />
+        and only the clear ringing<br />
+        of the present remains.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h1 id="mindfulness-of-the-inner-light">Mindfulness of the Inner
+        Light</h1>
+        <h2 id="the-lamp-of-the-mind">The Lamp of the Mind</h2>
+        <p>Yeshua said:<br />
+        “The mind is a lamp<br />
+        set upon the altar of the heart.<br />
+        When it turns toward many images,<br />
+        shadows crowd the room.<br />
+        Turn the lamp toward this present breath,<br />
+        this single step,<br />
+        Whenever fear of yesterday or tomorrow arises,<br />
+        gently return to what your hands are touching now.<br />
+        Let the present moment<br />
+        be the ark that carries you through the waters.<br />
+        this bare moment,<br />
+        and its light becomes a sword—<br />
+        cutting through drifting thoughts<br />
+        as a sharp wind scatters smoke.<br />
+        What survives the cut<br />
+        is what is truly here.”<br />
+        </p>
+        <h2 id="the-seeing-itself">The Seeing Itself</h2>
+        <p>“You see the sky,<br />
+        so you are not the sky.<br />
+        You see the thought as it arises now,<br />
+        so you are not the thought.<br />
+        You see even the sense of ‘I’<br />
+        appearing and fading in this moment,<br />
+        so you are not that either.<br />
+        Rest your attention in the seeing itself—<br />
+        still, awake, present—<br />
+        and the Seer opens<br />
+        like a flower of light<br />
+        with no one at the center.”<br />
+        </p>
+        <h2 id="the-birth-of-light">The Birth of Light</h2>
+        <p>“Sit until the silence<br />
+        no longer seems a stranger.<br />
+        Sit until the watcher grows thin<br />
+        as morning mist.<br />
+        Then you will know<br />
+        that the Light you sought<br />
+        was waiting, patient and untroubled,<br />
+        beneath the next unspoken breath.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h1 id="the-nature-of-suffering">The Nature of Suffering</h1>
+        <h2 id="the-shadow-and-the-light">The Shadow and the Light</h2>
+        <p>“A shadow follows your feet<br />
+        and whispers, ‘I am you.’<br />
+        But you are the sun<br />
+        that casts the shadow—<br />
+        untouched,<br />
+        unbroken,<br />
+        unbound.<br />
+        Suffering begins<br />
+        when you bow to the shadow.<br />
+        Freedom begins<br />
+        when you remember the Light.”<br />
+        </p>
+        <h2 id="the-garment-of-desire">The Garment of Desire</h2>
+        <p>“When desire arises,<br />
+        let it rise like mist on a warm morning.<br />
+        Feel it on the skin,<br />
+        but do not call it by your name.<br />
+        Touch it lightly,<br />
+        as one touches a garment hanging loosely.<br />
+        Remember:<br />
+        you are the wearer,<br />
+        not the woven thread.<br />
+        Desire that is seen clearly<br />
+        fades by itself<br />
+        and leaves the heart clean.”<br />
+        </p>
+        <h2 id="facing-the-shadow">Facing the Shadow</h2>
+        <p>“The first arrow is pain<br />
+        when life pierces the body or the heart.<br />
+        The second arrow<br />
+        is the story you tell about it—<br />
+        ‘This should not be,’<br />
+        ‘This is who I am.’<br />
+        You cannot always turn away<br />
+        the first arrow.<br />
+        But the second<br />
+        is in your own hand.<br />
+        Bring your attention gently<br />
+        to the ache that is here now,<br />
+        without name,<br />
+        without judgment.<br />
+        In that clear seeing,<br />
+        the second arrow falls,<br />
+        and the wound becomes a doorway.<br />
+        Bow to the darkness with open eyes—<br />
+        and it scatters<br />
+        like crows before dawn.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h1 id="the-path-of-seeing-through-illusion">The Path of Seeing
+        Through Illusion</h1>
+        <h2 id="the-ocean-and-the-wave">The Ocean and the Wave</h2>
+        <p>Yeshua said:<br />
+        “A thought rises—<br />
+        a single wave<br />
+        tasting the open air.<br />
+        Chase it,<br />
+        and you forget the sea.<br />
+        Be still,<br />
+        and the wave returns<br />
+        to the depth<br />
+        that has always been yours.<br />
+        You are not the passing wave,<br />
+        but the ocean that never leaves itself.”<br />
+        </p>
+        <h2 id="the-space-around-the-fire">The Space Around the
+        Fire</h2>
+        <p>“Anger flames high<br />
+        when fed by the self.<br />
+        Stand one breath away,<br />
+        as the clear night<br />
+        stands from the campfire.<br />
+        See the heat,<br />
+        feel the pull,<br />
+        but do not step inside the blaze.<br />
+        The fire burns itself out,<br />
+        and the night<br />
+        remains unburned.<br />
+        So too your awareness<br />
+        remains untouched<br />
+        when you do not call the fire ‘I’.”<br />
+        </p>
+        <h2 id="the-river-of-thoughts">The River of Thoughts</h2>
+        <p>Yeshua said:<br />
+        “Thoughts flow through the mind<br />
+        like a river in flood—<br />
+        memories, fears, plans,<br />
+        arguing for a thousand futures.<br />
+        If you are swept into the current,<br />
+        you are tossed from stone to stone.<br />
+        If you stand on the bank<br />
+        in the clear strength of the present,<br />
+        you feel the rush,<br />
+        but you do not drown.<br />
+        Let your attention be a sword<br />
+        of quiet seeing.<br />
+        With a single, gentle stroke<br />
+        it parts the waters of distraction,<br />
+        and the bed of the river appears—<br />
+        the still, unmoving ground<br />
+        of your own being.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h1 id="compassion-born-of-non-self">Compassion Born of
+        Non-Self</h1>
+        <h2 id="the-seeing-of-compassion">The Seeing of Compassion</h2>
+        <p>“Compassion is not the trembling<br />
+        of a tender heart alone.<br />
+        It is the clear sight<br />
+        that no leaf<br />
+        falls apart from the tree,<br />
+        and no soul<br />
+        stands apart from the One.<br />
+        When you see through the veil of ‘me’ and ‘you’,<br />
+        you cannot help but care—<br />
+        for every face<br />
+        is your own.”<br />
+        </p>
+        <h2 id="healing-the-inner-wound">Healing the Inner Wound</h2>
+        <p>“When another wounds you,<br />
+        listen for the wound<br />
+        beneath their hand.<br />
+        It is their cry,<br />
+        not your identity.<br />
+        Heal the echo within yourself—<br />
+        the place that believed<br />
+        it could be diminished—<br />
+        and the blow transforms<br />
+        into a bell<br />
+        calling you home.<br />
+        Then you will bless<br />
+        even the one who struck you,<br />
+        for unknowingly<br />
+        they pointed to your freedom.”<br />
+        </p>
+        <h2 id="the-natural-radiance">The Natural Radiance</h2>
+        <p>“When the self grows quiet,<br />
+        love spills out<br />
+        as naturally<br />
+        as water reflecting the moon.<br />
+        You need not command it,<br />
+        nor adorn it with names.<br />
+        You need only<br />
+        step out of the way.<br />
+        Then compassion moves by itself—<br />
+        no doer,<br />
+        only the shining of the Heart.”</p>
+        <h2 id="the-space-of-seeing">The Space of Seeing</h2>
+        <p>Yeshua said:<br />
+        “When you look directly<br />
+        at a thought, a fear, a wound,<br />
+        it steps out from your chest<br />
+        and stands before you.<br />
+        In that simple seeing,<br />
+        space opens.<br />
+        What was a prison<br />
+        becomes a guest you may receive<br />
+        and gently release.<br />
+        What you behold,<br />
+        you are no longer bound to be.”<br />
+        </p>
+        <h2 id="the-four-lettings-go">The Four Lettings-Go</h2>
+        <p>“There are four doors<br />
+        through which the false self leaves quietly:<br />
+        non-violence,<br />
+        non-judgment,<br />
+        non-forcing,<br />
+        and non-self.<br />
+        When you do not wound,<br />
+        the heart need not defend.<br />
+        When you do not judge,<br />
+        the mind need not divide.<br />
+        When you do not force,<br />
+        the Way moves of itself.<br />
+        When you do not cling to ‘I’,<br />
+        the true "I Am" may speak.<br />
+        You do not disappear—<br />
+        you become clear.”<br />
+        </p>
+        <h2 id="the-union-in-the-heart">The Union in the Heart</h2>
+        <p>“In the heart that has become clear<br />
+        through these lettings-go,<br />
+        the Father and the Son are not two.<br />
+        The Source and the Living Image<br />
+        shine as one Light.<br />
+        The Holy Breath<br />
+        moves between them<br />
+        like fire between coal and flame,<br />
+        and completes their joy in you.<br />
+        This is the bridal chamber within:<br />
+        when you cease to wound, to judge,<br />
+        to force, to cling,<br />
+        you do not become empty—<br />
+        you become the open room<br />
+        where God and the soul<br />
+        know themselves as one.""</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h1 id="the-kingdom-as-the-present-moment">The Kingdom as the
+        Present Moment</h1>
+        <h2 id="the-kingdom-is-now">The Kingdom is Now</h2>
+        <p>Yeshua said:<br />
+        “The Kingdom hides<br />
+        in the folds of the present moment<br />
+        like a jewel in a child’s hand.<br />
+        Do not search in distant heavens<br />
+        or in years yet to come.<br />
+        Bring your whole attention<br />
+        to this breath,<br />
+        this sound,<br />
+        this simple act of standing here.<br />
+        Such attention is a bright blade<br />
+        that cuts the chains of yesterday and tomorrow.<br />
+        Whoever stands thus in now<br />
+        finds that the doors of the Kingdom<br />
+        were never shut.”<br />
+        </p>
+        <h2 id="the-living-moment">The Living Moment</h2>
+        <p>“The past is a footprint in dust.<br />
+        The future is a story in ink,<br />
+        yet to be read.<br />
+        This breath alone is alive,<br />
+        and the Living One<br />
+        whispers within it.<br />
+        Drink this breath without distraction,<br />
+        and you will taste<br />
+        the wine of eternity<br />
+        poured into now.”<br />
+        </p>
+        <h2 id="the-dream-of-time">The Dream of Time</h2>
+        <p>“When you step fully into now,<br />
+        the watchers of fear fall silent.<br />
+        For they live only<br />
+        in yesterday’s shadows<br />
+        and tomorrow’s storms.<br />
+        Hold the present moment<br />
+        as you would hold a flame—<br />
+        steadily, with care.<br />
+        Watched in this way,<br />
+        the dream of time unravels<br />
+        thread by thread,<br />
+        until only naked Being remains.<br />
+        Then you will see<br />
+        that you never left eternity—<br />
+        you only wandered in your thoughts.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h1 id="the-fruit-of-the-way">The Fruit of the Way</h1>
+        <h2 id="the-taste-of-the-tree">The Taste of the Tree</h2>
+        <p>Yeshua said:<br />
+        “The tree is known by its fruit,<br />
+        and the heart is known<br />
+        by the taste of its actions.<br />
+        Do not ask, ‘Is this path true?’<br />
+        Ask, ‘What does it ripen in me?’<br />
+        If your seeing bears peace,<br />
+        if your words bear mercy,<br />
+        if your hands bear freedom from suffering,<br />
+        then the root is good,<br />
+        whether you name it Dharma or Kingdom.<br />
+        The wise one does not cling<br />
+        to the name of the tree;<br />
+        he tastes the fruit<br />
+        and understands.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h1 id="liberation-the-ascent-of-the-mindful-soul">Liberation:
+        The Ascent of the Mindful Soul</h1>
+        <h2 id="mist-before-the-dawn">Mist Before the Dawn</h2>
+        <p>“The powers rise<br />
+        like fog along the valley floor—<br />
+        fear, craving, confusion, pride.<br />
+        But the awakened soul says:<br />
+        ‘You cannot bind me,<br />
+        for I have seen the sun.’<br />
+        At this,<br />
+        the fog remembers<br />
+        what it is<br />
+        and melts.<br />
+        Liberation is not the death of the powers,<br />
+        but their recognition<br />
+        as passing mist.”<br />
+        </p>
+        <h2 id="the-trap-of-belief">The Trap of Belief</h2>
+        <p>“Do not flee the world—<br />
+        the world is a passing cloud.<br />
+        Flee the one<br />
+        who believes the cloud is a prison.<br />
+        For that belief<br />
+        is the iron gate,<br />
+        and clear seeing<br />
+        is the key<br />
+        that has always been in your hand.<br />
+        When you open your fist,<br />
+        you discover<br />
+        there was never a lock.”<br />
+        </p>
+        <h2 id="the-rising-flame">The Rising Flame</h2>
+        <p>“When grasping loosens<br />
+        and resistance unwinds,<br />
+        the soul lifts itself<br />
+        as a flame lifts toward the sky—<br />
+        not by effort,<br />
+        but by nature.<br />
+        Do not pull the flame.<br />
+        Do not push the flame.<br />
+        Simply remove the lid<br />
+        from your own heart,<br />
+        and its rising<br />
+        is assured.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h1 id="the-great-return-to-the-self-that-is-no-self">The Great
+        Return to the Self-That-Is-No-Self</h1>
+        <h2 id="the-nameless-one">The Nameless One</h2>
+        <p>Yeshua said:<br />
+        “When all that you are not<br />
+        falls away like autumn leaves,<br />
+        what remains<br />
+        is the bare tree of your being—<br />
+        rooted in the Nameless One,<br />
+        whose breath is the wind<br />
+        through every branch.<br />
+        Do not cling to the leaves<br />
+        of role and story.<br />
+        Trust the root,<br />
+        and winter itself<br />
+        will feel like home.”<br />
+        </p>
+        <h2 id="fullness-and-emptiness">Fullness and Emptiness</h2>
+        <p>“When emptiness is seen clearly,<br />
+        it overflows with fullness.<br />
+        When fullness is held lightly,<br />
+        it reveals its empty heart.<br />
+        Between the two dances<br />
+        the One<br />
+        who is neither and both—<br />
+        like space,<br />
+        bearing all worlds<br />
+        yet never burdened.<br />
+        To awaken is to rest<br />
+        as this silent, shining space.”<br />
+        </p>
+        <h2 id="already-awakened">Already Awakened</h2>
+        <p>“Blessed is the one<br />
+        who drops even the longing to awaken.<br />
+        For as long as you seek,<br />
+        you imagine distance.<br />
+        At the moment of release,<br />
+        the veil falls,<br />
+        and you see<br />
+        that awakening<br />
+        was the very ground<br />
+        beneath your feet—<br />
+        the Light<br />
+        that never left you,<br />
+        even in your deepest sleep.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        
+        <div style="text-align: center; margin-top: 4rem; opacity: 0.6; font-size: 0.9rem;">
+            <p>The Scroll of The Living Way</p>
+        </div>
+    </div>
 </body>
 </html>

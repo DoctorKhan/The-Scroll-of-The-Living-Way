@@ -4,10 +4,7 @@
 		{
 			"label": "Generate Living Scroll HTML",
 			"type": "shell",
-			"command": "python3",
-			"args": [
-				"tools/tex_to_html.py"
-			],
+			"command": "./tools/build_html.sh",
 			"group": {
 				"kind": "build",
 				"isDefault": true
