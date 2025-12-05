@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Generate Living Scroll HTML",
+			"type": "shell",
+			"command": "python3",
+			"args": [
+				"tools/tex_to_html.py"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"runOptions": {
+				"runOn": "folderOpen"
+			},
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

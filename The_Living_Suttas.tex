@@ -22,32 +22,24 @@
 \usepackage{emptypage} % Prevents page numbers/headers on blank pages
 
 % --- 1. CHAPTER STYLING (The "Books") ---
-When you are troubled, \\
-rest one hand upon your chest \\
-and follow ten breaths in silence, \\
-as a child follows a river home.\\
-	itleformat{\chapter}[display]
+	\titleformat{\chapter}[display]
   {\normalfont\centering} % Global style for chapter
   {\vspace{-1cm}\itshape\large Chapter \thechapter} % Label "Chapter I"
   {10pt} % Space between label and title
   {\Huge\bfseries} % Title style
-	itlespacing*{\chapter}{0pt}{0pt}{40pt}
+	\titlespacing*{\chapter}{0pt}{0pt}{40pt}
 
 % --- 2. SAYING STYLING (The "Statuary" Look) ---
 % We use [display] to stack the number above the title
 \counterwithout{section}{chapter} % Continuous numbering 1-24
-	itleformat{\section}[display]
+	\titleformat{\section}[display]
   {\normalfont\centering} % Center everything
   {\vspace{1em}\Huge\bfseries\thesection} % THE NUMBER: Huge and Bold
   {0.3em} % Small gap between number and title
   {\large\scshape} % THE TITLE: Small Caps, slightly smaller than number
   
 % Adjust spacing: {left}{top}{bottom}
-Each day, for a little while, \\
-do nothing but listen to one breath entering \\
-and one breath leaving. \\
-Let this be your first prayer.\\
-	itlespacing*{\section}{0pt}{1.0ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+	\titlespacing*{\section}{0pt}{1.0ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 % --- 3. PAGE BREAK LOGIC ---
 % CRITICAL: This command ensures a saying is never split across pages.
@@ -63,11 +55,6 @@ Let this be your first prayer.\\
     \vspace{1.5cm}
 }
 
-When confusion rises, \\
-name softly what you see— \\
-`fear is here', `anger is here', `grief is here'— \\
-and let the lamp rest on it \\
-without blame and without grasping.\\
 % --- 5. HEADER/FOOTER ---
 \pagestyle{fancy}
 \fancyhf{}
@@ -83,14 +70,9 @@ without blame and without grasping.\\
     \vspace*{1.5cm}
     {\Huge \textsc{The Book of}\\ \textsc{Awakening}} \\
     \vspace{0.5cm}
-Practice often by asking, \\
-in the midst of any thought, \\
-`What is aware of this?' \\
-and resting, just for a breath, \\
-in the One who cannot be seen.\\
-    {\large \textit{The Living Dharma of Yeshua}} \\
+  {\large \textit{Suttas of the Living Buddha}} \\
     \vspace{2cm}
-    	extbf{The Path from Forgetting to Clarity} \\
+	    \textbf{The Path from Forgetting to Clarity} \\
     \vspace{0.5cm}
     {\small Edition 2.0 $\cdot$ December 5, 2025} \\
     \vfill

@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cmd=${1:-}
+
+case "$cmd" in
+  rebuild|*)
+    # Build PDFs from TeX
+    pdflatex -interaction=nonstopmode The_Living_Way.tex >/dev/null 2>&1 || exit 1
+    pdflatex -interaction=nonstopmode The_Living_Suttas.tex >/dev/null 2>&1 || exit 1
+    # Regenerate HTML from TeX
+    python3 tools/tex_to_html.py
+    ;;
+  *)
+    echo "Usage: run rebuild" >&2
+    exit 1
+    ;;
+esac
