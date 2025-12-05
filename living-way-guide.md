@@ -35,7 +35,7 @@ But it is **not the Way**.
 
 ## ✦ The Inner Child
 
-In the sayings of the Living Jesus, the “child” has a radically different meaning.
+In the Gospel of Thomas and the Gospel of Mary, the “child” has a radically different meaning.
 
 It refers to the **Inner Child**:
 
@@ -216,19 +216,22 @@ It is recognition.
 
 When a Power arises, say:
 
-* “You did not see me.”
-* “You are a garment I wore.”
-* “I am not bound.”
+* “You did not see me. You did not recognize me.”
+* “You are a garment I wore; you are not me.”
+* “I was bound, but I have not bound.”
+* “I am released from you. I am free.”
 
 This returns you to the **Inner Child**—whole, unbroken, free.
 
 ---
 
-# **Chapter 4 — How to Read the Sayings**
+# **Chapter 4 — How to Read the Texts**
 
-Thomas is a book of **riddles meant to awaken the soul**.
+The Gospel of Thomas and the Gospel of Mary are not history books; they are **technologies of awakening**.
 
-It begins with the promise:
+Thomas is a book of **riddles**, while Mary is a **map of the soul's ascent**.
+
+They begin with the promise:
 
 > “Whoever discovers the interpretation of these sayings will not taste death.”
 > — Thomas 1
@@ -270,6 +273,7 @@ Thus the great inversion:
 | Salvation = understanding origin | Salvation = accepting atonement         |
 | Body = garment to transcend      | Body = temple awaiting resurrection     |
 | Authority = inner experience     | Authority = apostles and institutions   |
+| (Mary 4:5)                       | (Galatians 1:12)                        |
 
 Paul turned the Way’s **self-liberation**
 into a religion of **vicarious redemption**.
@@ -299,8 +303,29 @@ When Rome adopted Christianity, it:
 
 * replaced the Way with imperial religion,
 * adopted the cross from solar cults,
-* mapped Jesus’ birth to Sol Invictus,
-* and turned inner awakening into yearly festivals.
+* mapped Jesus’ birth to **Sol Invictus** (the "Unconquered Sun") and **Saturnalia**,
+* and turned the inner "Soul's Ascent" into yearly festivals like **Easter** (named after the goddess **Ēostre**).
+
+**The Lost Symbols of Life:**
+For the first 300 years, followers of the Way did not use the cross. They used symbols of life:
+* The **Ichthys** (Fish)
+* The **Chi-Rho** (☧)
+* The **Good Shepherd**
+
+The cross—a Roman instrument of torture—was only adopted later by Emperor Constantine as a symbol of imperial victory.
+
+### ✦ The Constructed Savior: The Pagan Blueprint
+
+Paul and the early church didn't just adopt holidays; they adopted the *story* of the pagan mystery gods to construct the theological Jesus. The "Living Jesus" of Thomas is a teacher of wisdom. The "Christ" of Paul is a syncretic deity modeled on the dying-and-rising gods of the Mediterranean.
+
+To create a religion that would appeal to the Gentile world, the Jewish teacher was overlaid with the myths of:
+
+*   **Mithras:** A Persian savior-god popular with Roman soldiers. He was associated with light, born of a rock (or virgin in some traditions), had 12 companions, and his followers shared a sacramental meal of bread and wine.
+*   **Dionysus:** The Greek god of wine. He was the "Son of God" (Zeus) and a mortal woman, performed miracles (turning water to wine), and was associated with death and rebirth.
+*   **Osiris/Horus:** The Egyptian archetype of the resurrected god who conquers death to become the judge of the dead.
+*   **Attis:** A Phrygian god born of a virgin, who died under a tree and rose again after three days.
+
+By using these mythic templates, Paul created a figure that the Roman world could recognize and worship—not as a guide to inner light, but as a new, superior version of their old gods.
 
 ### ✦ Temples and Priests
 
