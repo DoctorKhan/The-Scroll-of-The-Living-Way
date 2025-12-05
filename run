@@ -14,6 +14,9 @@ case "$cmd" in
     echo "Compiling The_Living_Suttas.tex..."
     pdflatex -interaction=nonstopmode The_Living_Suttas.tex >/dev/null || echo "Warning: PDF build for Living Suttas had errors."
 
+    echo "Compiling The_Living_Architecture.tex..."
+    pdflatex -interaction=nonstopmode The_Living_Architecture.tex >/dev/null || echo "Warning: PDF build for Living Architecture had errors."
+
     # Build HTML using the new bash script
     ./tools/build_html.sh
     

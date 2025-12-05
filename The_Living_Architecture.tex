@@ -1,0 +1,300 @@
+\documentclass[10pt, openright]{book}
+
+% --- KDP 5x8 PAPERBACK CONFIGURATION ---
+\usepackage[paperwidth=5in, paperheight=8in, top=0.75in, bottom=0.75in, outer=0.5in, inner=0.75in]{geometry}
+
+% --- TYPOGRAPHY ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{ebgaramond}
+\usepackage{microtype}
+\usepackage{chngcntr}
+
+% --- STYLING PACKAGES ---
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{parskip}
+\usepackage{amssymb}
+\usepackage{emptypage}
+
+% --- 1. CHAPTER STYLING ---
+\titleformat{\chapter}[display]
+  {\normalfont\centering}
+  {\vspace{-1cm}\itshape\large Book \thechapter}
+  {10pt}
+  {\Huge\bfseries}
+\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+
+% --- 2. SAYING STYLING ---
+\counterwithout{section}{chapter}
+\titleformat{\section}[display]
+  {\normalfont\centering}
+  {\vspace{1em}\Huge\bfseries\thesection}
+  {0.3em}
+  {\large\scshape}
+\titlespacing*{\section}{0pt}{1.0ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+% --- 3. PAGE BREAK LOGIC ---
+\newcommand{\sectionbreak}{\filbreak}
+
+% --- 4. ORNAMENTS ---
+\newcommand{\ornament}{
+    \vspace{1.5cm}
+    \begin{center}
+        \large $\cdot$ $\odot$ $\cdot$
+    \end{center}
+    \vspace{1.5cm}
+}
+
+% --- 5. HEADER/FOOTER ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[CO]{\scshape\small The Sayings of the Living Architecture} 
+\fancyhead[CE]{\scshape\small Yeshua the Living One}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+% --- TITLE PAGE ---
+\begin{titlepage}
+    \centering
+    \vspace*{1.5cm}
+    {\Huge \textsc{The Sayings of}\\ \textsc{The Living Architecture}} \\
+    \vspace{0.5cm}
+    {\large \textit{The Hidden Words of Yeshua the Living One}} \\
+    \vspace{2cm}
+     	\textbf{A Blueprint for the Awakened Soul} \\
+    \vspace{0.5cm}
+    {\small Edition 1.0 $\cdot$ December 5, 2025} \\
+    \vfill
+    {\small Compiled \& Prepared for the Seeker of Gnosis}
+    \vspace{1cm}
+\end{titlepage}
+
+\frontmatter
+\tableofcontents
+
+\chapter{Preface}
+\textit{Yeshua spoke:}
+
+These are the words of the architecture, \\
+the blueprint of the soul's descent and return. \\
+Read them not as laws, \\
+but as the map of your own forgetting \\
+and the key to your own remembering.
+
+\mainmatter
+
+\chapter{The Blueprint}
+
+\section{On Forgetting}
+Yeshua said: \\
+``Before you entered the world, you agreed to forget. \\
+For what is a story if the reader remembers the last page? \\
+You forgot yourself that you might learn to recognize yourself again--- \\
+and rejoice twice.''
+
+\ornament
+
+\section{The Descent}
+He said: \\
+``You descended like a spark into the clay, \\
+not as punishment, \\
+but as play. \\
+The Light hides itself in form \\
+so that the joy of unveiling \\
+may be complete.''
+
+\ornament
+
+\section{The Mask}
+He said: \\
+``The world is a mask laid upon your face. \\
+You mistake the mask for your skin \\
+and cry, `I am suffering.' \\
+But when you loosen your hold, \\
+the mask falls away, \\
+and you laugh--- \\
+for the face beneath has never been harmed.''
+
+\ornament
+
+\section{The Script}
+Yeshua said: \\
+``The soul enters the world with a script, \\
+but the script is incomplete. \\
+It waits for you to speak. \\
+When you refuse to speak, it binds you; \\
+when you speak with awareness, \\
+it bends to your freedom.''
+
+\ornament
+
+\section{The Player}
+He said: \\
+``There is a Player within your play. \\
+When the role trembles, \\
+the Player remains untouched. \\
+When the Player awakens, \\
+the role becomes a doorway.''
+
+\ornament
+
+\section{The Fivefold Architecture}
+Yeshua said: \\
+``There are five movements in every soul: \\
+the forgetting, \\
+the distortion, \\
+the intervention, \\
+the awakening, \\
+and the completion. \\
+Blessed is the one who sees the rhythm, \\
+for she will not drown in a single wave.''
+
+\ornament
+
+\section{Ignorance}
+He said: \\
+``Ignorance is not darkness but fog. \\
+Do not curse the fog--- \\
+stand still, and it clears.''
+
+\ornament
+
+\section{Desire}
+Yeshua said: \\
+``Desire pulls the soul forward \\
+like a river longing for the sea. \\
+But the sea is already within you. \\
+Look inward, \\
+and the river grows calm.''
+
+\ornament
+
+\section{Aversion}
+He said: \\
+``Aversion pushes the world away \\
+as if the heart could build a wall against life. \\
+But the heart is round, \\
+and every wall becomes a wheel \\
+that rolls back upon the builder.''
+
+\ornament
+
+\section{Judgment}
+Yeshua said: \\
+``Judgment divides the world into two, \\
+and calls the halves `good' and `evil.' \\
+But both are garments of the same Light. \\
+When the single eye opens, \\
+the torn world is mended.''
+
+\ornament
+
+\section{The Rebalancing}
+He said: \\
+``The wheel of the soul turns unevenly \\
+when one spoke grows heavy. \\
+Do not cut the spoke; \\
+restore the center. \\
+Then the wheel moves without effort.''
+
+\ornament
+
+\section{The Breath}
+Yeshua said: \\
+``The Breath is the stair between the worlds. \\
+With each inhale, you descend; \\
+with each exhale, you rise. \\
+Climb these stairs with awareness, \\
+and you will find Me \\
+between the steps.''
+
+\ornament
+
+\section{The Father, Son, and Breath}
+He said: \\
+``The Father is the Light beyond all forms. \\
+The Son is the Light within the form. \\
+The Breath is the Light moving between them. \\
+When you know this with your whole being, \\
+you will see that the Three are One \\
+and the One is your own nature.''
+
+\ornament
+
+\section{The Mirror}
+Yeshua said: \\
+``You look upon your life as upon a mirror, \\
+but the mirror shows only the mask. \\
+Break it. \\
+In the shards you will see the sky.''
+
+\ornament
+
+\section{On Suffering}
+He said: \\
+``Suffering is the sound the mask makes \\
+when it begins to crack. \\
+Do not mend the mask--- \\
+let it break. \\
+Your freedom stands behind it.''
+
+\ornament
+
+\section{On Awakening}
+Yeshua said: \\
+``Awakening is not the gaining of knowledge \\
+but the loss of confusion. \\
+When the fog lifts, \\
+the mountain has always been there.''
+
+\ornament
+
+\section{The Two Selves}
+He said: \\
+``There is the self that can be wounded \\
+and the Self that cannot. \\
+Learn the difference, \\
+and the blows of the world \\
+become taps upon a drum \\
+that wakes you from sleep.''
+
+\ornament
+
+\section{The Unforced Life}
+Yeshua said: \\
+``The Kingdom is not seized by effort \\
+nor delayed by hesitation. \\
+It arrives when you cease to push. \\
+Stop pushing, \\
+and the door opens inward.''
+
+\ornament
+
+\section{The Game Becomes Lucid}
+He said: \\
+``When the Player recognizes the game, \\
+the game becomes lucid. \\
+When the game becomes lucid, \\
+the Player becomes free. \\
+And when the Player is free, \\
+the world shines from within \\
+as it did in the beginning.''
+
+\ornament
+
+\section{The Completion}
+Yeshua said: \\
+``Completion is not escape from the world \\
+but transparency within it. \\
+When the soul is clear, \\
+the world passes through \\
+and leaves no wound. \\
+This is the bridal chamber--- \\
+when the Light recognizes itself \\
+in the form it entered.''
+
+\end{document}

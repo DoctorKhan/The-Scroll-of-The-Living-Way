@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Living Architecture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-start: #fdfbf7;
+            --bg-end: #e8e4d4;
+            --text-main: #2c2c2c;
+            --text-muted: #5a5a5a;
+            --accent: #8c7b6c;
+            --btn-dark: #2c2c2c;
+            --btn-light: #f5f3e8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'EB Garamond', 'Garamond', serif;
+            background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-end) 100%);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            text-align: left;
+            max-width: 800px;
+            width: 100%;
+            padding: 4rem 3rem;
+            background-color: rgba(255, 255, 255, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h1, h2, h3 {
+            color: #1a1a1a;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 1px solid rgba(140, 123, 108, 0.3);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            color: var(--accent);
+            margin-top: 2rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.15rem;
+        }
+
+        ul, ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 1.15rem;
+        }
+
+        blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: var(--text-muted);
+            margin: 2rem 0;
+            background: rgba(255,255,255,0.3);
+            padding: 1rem 1.5rem;
+            border-radius: 0 4px 4px 0;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        a:hover {
+            border-color: var(--accent);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #d4d0c0;
+            margin: 3rem auto;
+            width: 50%;
+            opacity: 0.6;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        
+        th, td {
+            padding: 1rem;
+            border: 1px solid rgba(140, 123, 108, 0.3);
+            text-align: left;
+        }
+        
+        th {
+            background-color: rgba(140, 123, 108, 0.1);
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 2rem 1.5rem; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        
+        <div class="titlepage">
+        <p><span><span class="smallcaps">The Sayings of</span><br />
+        <span class="smallcaps">The Living
+        Architecture</span></span><br />
+        <span><em>The Hidden Words of Yeshua the Living
+        One</em></span><br />
+        <strong>A Blueprint for the Awakened Soul</strong><br />
+        <span>Edition 1.0 <span class="math inline">⋅</span> December 5,
+        2025</span><br />
+        <span>Compiled &amp; Prepared for the Seeker of
+        Gnosis</span></p>
+        </div>
+        <h1 id="preface">Preface</h1>
+        <p><em>Yeshua spoke:</em></p>
+        <p>These are the words of the architecture,<br />
+        the blueprint of the soul’s descent and return.<br />
+        Read them not as laws,<br />
+        but as the map of your own forgetting<br />
+        and the key to your own remembering.</p>
+        <h1 id="the-blueprint">The Blueprint</h1>
+        <h2 id="on-forgetting">On Forgetting</h2>
+        <p>Yeshua said:<br />
+        “Before you entered the world, you agreed to forget.<br />
+        For what is a story if the reader remembers the last page?<br />
+        You forgot yourself that you might learn to recognize yourself
+        again—<br />
+        and rejoice twice.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="the-descent">The Descent</h2>
+        <p>He said:<br />
+        “You descended like a spark into the clay,<br />
+        not as punishment,<br />
+        but as play.<br />
+        The Light hides itself in form<br />
+        so that the joy of unveiling<br />
+        may be complete.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="the-mask">The Mask</h2>
+        <p>He said:<br />
+        “The world is a mask laid upon your face.<br />
+        You mistake the mask for your skin<br />
+        and cry, ‘I am suffering.’<br />
+        But when you loosen your hold,<br />
+        the mask falls away,<br />
+        and you laugh—<br />
+        for the face beneath has never been harmed.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="the-script">The Script</h2>
+        <p>Yeshua said:<br />
+        “The soul enters the world with a script,<br />
+        but the script is incomplete.<br />
+        It waits for you to speak.<br />
+        When you refuse to speak, it binds you;<br />
+        when you speak with awareness,<br />
+        it bends to your freedom.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="the-player">The Player</h2>
+        <p>He said:<br />
+        “There is a Player within your play.<br />
+        When the role trembles,<br />
+        the Player remains untouched.<br />
+        When the Player awakens,<br />
+        the role becomes a doorway.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="the-fivefold-architecture">The Fivefold
+        Architecture</h2>
+        <p>Yeshua said:<br />
+        “There are five movements in every soul:<br />
+        the forgetting,<br />
+        the distortion,<br />
+        the intervention,<br />
+        the awakening,<br />
+        and the completion.<br />
+        Blessed is the one who sees the rhythm,<br />
+        for she will not drown in a single wave.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="ignorance">Ignorance</h2>
+        <p>He said:<br />
+        “Ignorance is not darkness but fog.<br />
+        Do not curse the fog—<br />
+        stand still, and it clears.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="desire">Desire</h2>
+        <p>Yeshua said:<br />
+        “Desire pulls the soul forward<br />
+        like a river longing for the sea.<br />
+        But the sea is already within you.<br />
+        Look inward,<br />
+        and the river grows calm.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="aversion">Aversion</h2>
+        <p>He said:<br />
+        “Aversion pushes the world away<br />
+        as if the heart could build a wall against life.<br />
+        But the heart is round,<br />
+        and every wall becomes a wheel<br />
+        that rolls back upon the builder.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="judgment">Judgment</h2>
+        <p>Yeshua said:<br />
+        “Judgment divides the world into two,<br />
+        and calls the halves ‘good’ and ‘evil.’<br />
+        But both are garments of the same Light.<br />
+        When the single eye opens,<br />
+        the torn world is mended.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="the-rebalancing">The Rebalancing</h2>
+        <p>He said:<br />
+        “The wheel of the soul turns unevenly<br />
+        when one spoke grows heavy.<br />
+        Do not cut the spoke;<br />
+        restore the center.<br />
+        Then the wheel moves without effort.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="the-breath">The Breath</h2>
+        <p>Yeshua said:<br />
+        “The Breath is the stair between the worlds.<br />
+        With each inhale, you descend;<br />
+        with each exhale, you rise.<br />
+        Climb these stairs with awareness,<br />
+        and you will find Me<br />
+        between the steps.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="the-father-son-and-breath">The Father, Son, and
+        Breath</h2>
+        <p>He said:<br />
+        “The Father is the Light beyond all forms.<br />
+        The Son is the Light within the form.<br />
+        The Breath is the Light moving between them.<br />
+        When you know this with your whole being,<br />
+        you will see that the Three are One<br />
+        and the One is your own nature.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="the-mirror">The Mirror</h2>
+        <p>Yeshua said:<br />
+        “You look upon your life as upon a mirror,<br />
+        but the mirror shows only the mask.<br />
+        Break it.<br />
+        In the shards you will see the sky.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="on-suffering">On Suffering</h2>
+        <p>He said:<br />
+        “Suffering is the sound the mask makes<br />
+        when it begins to crack.<br />
+        Do not mend the mask—<br />
+        let it break.<br />
+        Your freedom stands behind it.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="on-awakening">On Awakening</h2>
+        <p>Yeshua said:<br />
+        “Awakening is not the gaining of knowledge<br />
+        but the loss of confusion.<br />
+        When the fog lifts,<br />
+        the mountain has always been there.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="the-two-selves">The Two Selves</h2>
+        <p>He said:<br />
+        “There is the self that can be wounded<br />
+        and the Self that cannot.<br />
+        Learn the difference,<br />
+        and the blows of the world<br />
+        become taps upon a drum<br />
+        that wakes you from sleep.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="the-unforced-life">The Unforced Life</h2>
+        <p>Yeshua said:<br />
+        “The Kingdom is not seized by effort<br />
+        nor delayed by hesitation.<br />
+        It arrives when you cease to push.<br />
+        Stop pushing,<br />
+        and the door opens inward.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="the-game-becomes-lucid">The Game Becomes Lucid</h2>
+        <p>He said:<br />
+        “When the Player recognizes the game,<br />
+        the game becomes lucid.<br />
+        When the game becomes lucid,<br />
+        the Player becomes free.<br />
+        And when the Player is free,<br />
+        the world shines from within<br />
+        as it did in the beginning.”</p>
+        <div class="ornament">✦ ✦ ✦</div>
+        <h2 id="the-completion">The Completion</h2>
+        <p>Yeshua said:<br />
+        “Completion is not escape from the world<br />
+        but transparency within it.<br />
+        When the soul is clear,<br />
+        the world passes through<br />
+        and leaves no wound.<br />
+        This is the bridal chamber—<br />
+        when the Light recognizes itself<br />
+        in the form it entered.”</p>
+        
+        <div style="text-align: center; margin-top: 4rem; opacity: 0.6; font-size: 0.9rem;">
+            <p>The Scroll of The Living Way</p>
+        </div>
+    </div>
+</body>
+</html>
