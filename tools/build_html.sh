@@ -21,12 +21,15 @@ process_tex() {
 
     echo "Converting $tex_file..."
     
-    # 1. Pre-process: Replace \ornament with a unique marker
-    # Strategy: 
-    # a. Rename the definition \newcommand{\ornament} to something else so it's not clobbered
-    # b. Replace all other instances of \ornament with the marker
-    sed "s/\\\\newcommand{\\\\ornament}/\\\\newcommand{\\\\ignoredornament}/g" "$tex_file" | \
-    sed "s/\\\\ornament/$ORNAMENT_MARKER/g" > "$temp_tex"
+	    # 1. Pre-process LaTeX for Pandoc
+	    #    a. Replace bare \ornament lines with a unique marker that we can
+	    #       turn into a decorative divider in HTML.
+	    #    b. Treat verse "stanza breaks" (blank line after a line ending in \\)
+	    #       as real paragraph breaks by removing the trailing \\ in that
+	    #       position. This lets Pandoc emit separate <p> blocks, so stanza
+	    #       gaps appear in HTML the same way they do in the PDF.
+	    perl -0pe 's/^\s*\\ornament\s*$/'"$ORNAMENT_MARKER"'/mg' "$tex_file" | \
+	    perl -0pe 's/\\+\s*\n\s*\n/\n\n/g' > "$temp_tex"
     
     # Derive title from filename (replace underscores with spaces)
     local title="${base_name//_/ }"
@@ -53,9 +56,13 @@ process_tex() {
 
 # Process all .tex files in the root directory
 for f in *.tex; do
-    # Check if file exists to avoid errors if no matches
-    [ -e "$f" ] || continue
-    process_tex "$f"
+	# Skip temporary/debug TeX files
+	if [[ "$f" == debug_* ]]; then
+		continue
+	fi
+	# Check if file exists to avoid errors if no matches
+	[ -e "$f" ] || continue
+	process_tex "$f"
 done
 
 # Process the Guide (Markdown)
